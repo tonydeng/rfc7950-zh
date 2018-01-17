@@ -1,4 +1,4 @@
-# 1. 介绍
+# 介绍
 
 `YANG`是一种数据建模语言，最初设计用于模拟由网络配置协议（`NETCONF`），`NETCONF`远程过程调用和NETCONF通知[RFC6241](https://tools.ietf.org/html/rfc6241)操作的配置和状态数据。自从`YANG`版本1 [RFC6020](https://tools.ietf.org/html/rfc6240)发布以来，`YANG`已被用于或被提议用于其他协议（例如，[RESTCONF](https://tools.ietf.org/html/rfc7950#ref-RESTCONF)和约束应用协议（`CoAP`）管理接口[CoMI](https://tools.ietf.org/html/rfc7950#ref-CoMI)）。此外，已经提出了不同于`XML`的编码（例如，`JSON` [RFC7951](https://tools.ietf.org/html/rfc7951)）。
 
