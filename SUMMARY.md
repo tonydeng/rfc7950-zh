@@ -2,7 +2,7 @@
 
 - [关于RFC7950中文翻译](README.md)
 - [1. 介绍](section-1/README.md)
-    - [1.1. Summary of Changes from RFC 6020](section-1/summary-of-changes-from-RFC-6020.md)
+    - [1.1. RFC 6020的变化摘要](section-1/summary-of-changes-from-RFC-6020.md)
 - [2. Key Words]()
 - [3. Terminology]()
     - [3.1. A Note on Examples]()
