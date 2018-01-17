@@ -1,0 +1,79 @@
+# RFC 6020的变化摘要
+
+这个文件定义了`YANG`语言的版本1.1。 `YANG`版本1.1是`YANG`语言的维护版本，解决了原始规范[RFC6020](https://tools.ietf.org/html/rfc6020)中的模糊性和缺陷。
+
+以下更改不能与`YANG`版本1向后兼容：
+
+- 更改了双引号字符串中转义字符解释的规则。这是从`YANG`版本1向后不兼容的变化。当更新`YANG`版本1模块为1.1，并且模块使用现在是非法的字符序列时，必须更改字符串以匹配新规则。详情请参见[第6.1.3节](https://tools.ietf.org/html/rfc7950#section-6.1.3)。
+
+- 没有引号的字符串不能包含任何单引号或双引号字符。这是从`YANG`版本1向后不兼容的变化。当更新`YANG`版本1模块为1.1，并且模块使用这样的引号字符时，必须更改字符串以匹配新的规则。详情请参见[第6.1.3节](https://tools.ietf.org/html/rfc7950#section-6.1.3)。
+
+- 在列表键上使“`when`”和“`if-feature`”非法。这是从`YANG`版本1向后不兼容的变化。当更新`YANG`版本1模块为1.1，并且模块使用这些结构时，必须删除它们以匹配新规则。
+
+- 定义了`YANG`模块中的合法字符。将`YANG`版本1模块更新到1.1时，必须删除现在非法的任何字符。详情请参阅[第6章](https://tools.ietf.org/html/rfc7950#section-6)。
+
+- 在内置的“字符串”中使非字符非法。此更改会影响基于`YANG`的协议的运行时行为。
+
+## 对`YANG`做了以下更改：
+
+- 将`YANG`版本从“1”更改为“1.1”。
+
+- 在“1.1”版本中做了“`yang-version`”声明。
+
+- 将“`if-feature`”语法扩展为功能名称上的布尔表达式。
+
+- 允许“比特”(`bit`)，“枚举”(`enum`)和“身份”(`identity`)中包含“`if-feature`”。
+
+- 允许“`refine`”中包含“`if-feature`”。
+
+- 允许“`choice`”作为简短的“`case`”陈述（见[第7.9.2节](https://tools.ietf.org/html/rfc7950#section-7.9.2)）。
+
+- 在“pattern”语句中添加了一个新的子句“`modifier`”（参见[第9.4.6节](https://tools.ietf.org/html/rfc7950#section-9.4.6)）。
+
+- 在“`input`”，“`output`”和“`notification`”中允许包含“`must`”。
+
+- 在`leafref`中允许包含“`require-instance`”。
+
+- 允许“`import`”和“`include`”中包含“描述”(`description`)和“引用”(`reference`)。
+
+- 允许导入模块的多个修订版本。
+
+- 允许“`augment`”添加有条件的强制节点（见[第7.17节](https://tools.ietf.org/html/rfc7950#section-7.17)）。
+
+- 在[第10节](https://tools.ietf.org/html/rfc7950#section-10)中添加了一组新的XML路径语言（`XPath`）函数。
+
+- 在[第6.4.1节](https://tools.ietf.org/html/rfc7950#section-6.4.1)中阐述了`XPath`上下文的树。
+
+- 在`XPath`表达式中定义了一个`identityref`的字符串值（见[9.10节](https://tools.ietf.org/html/rfc7950#section-9.10)）。
+
+- 澄清`typedef`中的`leafrefs`中没有前缀的名字（参见[6.4.1](https://tools.ietf.org/html/rfc7950#section-6.4.1)和[9.9.2](https://tools.ietf.org/html/rfc7950#section-9.92)节）。
+
+- 允许从多个基本身份派生身份（见[7.18](https://tools.ietf.org/html/rfc7950#section-7.18)和[9.10](https://tools.ietf.org/html/rfc7950#section-9.10)节）。
+
+- 允许枚举(`enumerations`)和位(`bits`)是子类型的（参见[9.6](https://tools.ietf.org/html/rfc7950#section-9.6)和[9.7](https://tools.ietf.org/html/rfc7950#section-9.7)节）。
+
+- 允许叶子列表具有默认值（参见[第7.7.2节](https://tools.ietf.org/html/rfc7950#section-7.7)）。
+
+- 允许非配置叶子列表中的非唯一值（参见[7.7节](https://tools.ietf.org/html/rfc7950#section-7.7)）。
+
+- 在语法中使用区分大小写的字符串的语法（按[RFC7405](https://tools.ietf.org/html/rfc7405)）。
+
+- 更改了模块发布机制（参见[第5.6.4节](https://tools.ietf.org/html/rfc7950#section-5.6.4)）。
+
+- 更改了子模块中定义的范围规则。子模块现在可以引用所有子模块中的所有定义
+
+- 添加了一个新的语句“`action`”，用于定义绑定到数据节点的操作。
+
+- 允许通知绑定到数据节点。
+
+- 增加了一个新的数据定义语句“`anydata`”（见[第7.10节](https://tools.ietf.org/html/rfc7950#section-7.10)），当数据可以在`YANG`中建模时，建议使用它来代替“`anyxml`”。
+
+- 在`unions`中允许类型“`empty`”和“`leafref`”。
+
+- 允许在键中键入“`empty`”。
+
+- 删除了标识符不能以字符“xml”开头的限制。
+
+## 对`NETCONF`映射进行了以下更改：
+
+- 服务器通过使用`ietf-yang-library` [RFC7895](https://tools.ietf.org/html/rfc7895)来发布对`YANG 1.1`模块的支持，而不是将它们列为`<hello>`消息中的能力。
