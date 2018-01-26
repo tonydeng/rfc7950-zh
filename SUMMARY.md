@@ -55,7 +55,7 @@
     - [7.5. “容器”声明](section-7/7.5.md)
     - [7.6. “叶”声明](section-7/7.6.md)
     - [7.7. “叶列表”声明](section-7/7.7.md)
-    - [7.8. The "list" Statement]()
+    - [7.8. “列表”声明](section-7/7.8.md)
     - [7.9. The "choice" Statement]()
     - [7.10. The "anydata" Statement]()
     - [7.11. The "anyxml" Statement]()
