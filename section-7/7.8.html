@@ -1,0 +1,2046 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>7.8. “列表”声明 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="7.9.html" />
+    
+    
+    <link rel="prev" href="7.7.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    关于RFC7950中文翻译
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../section-1/">
+            
+                <a href="../section-1/">
+            
+                    
+                    1. 介绍
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../section-1/1.1.html">
+            
+                <a href="../section-1/1.1.html">
+            
+                    
+                    1.1. RFC 6020的变化摘要
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../section-2/">
+            
+                <a href="../section-2/">
+            
+                    
+                    2. 关键词
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../section-3/">
+            
+                <a href="../section-3/">
+            
+                    
+                    3. 术语
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../section-3/3.1.html">
+            
+                <a href="../section-3/3.1.html">
+            
+                    
+                    3.1. 关于例子的一个注释
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../section-4/">
+            
+                <a href="../section-4/">
+            
+                    
+                    4. YANG概述
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../section-4/4.1.html">
+            
+                <a href="../section-4/4.1.html">
+            
+                    
+                    4.1. 功能概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../section-4/4.2.html">
+            
+                <a href="../section-4/4.2.html">
+            
+                    
+                    4.2. 语言概述
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../section-4/4.2.1.html">
+            
+                <a href="../section-4/4.2.1.html">
+            
+                    
+                    4.2.1. 模块和子模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="../section-4/4.2.2.html">
+            
+                <a href="../section-4/4.2.2.html">
+            
+                    
+                    4.2.2. 数据建模基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="../section-4/4.2.3.html">
+            
+                <a href="../section-4/4.2.3.html">
+            
+                    
+                    4.2.3. 配置和状态数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.4" data-path="../section-4/4.2.4.html">
+            
+                <a href="../section-4/4.2.4.html">
+            
+                    
+                    4.2.4. 内置类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.5" data-path="../section-4/4.2.5.html">
+            
+                <a href="../section-4/4.2.5.html">
+            
+                    
+                    4.2.5. 派生类型（typedef）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.6" data-path="../section-4/4.2.6.html">
+            
+                <a href="../section-4/4.2.6.html">
+            
+                    
+                    4.2.6. 可重复使用的节点组（分组）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.7" data-path="../section-4/4.2.7.html">
+            
+                <a href="../section-4/4.2.7.html">
+            
+                    
+                    4.2.7. 选择
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.8" data-path="../section-4/4.2.8.html">
+            
+                <a href="../section-4/4.2.8.html">
+            
+                    
+                    4.2.8. 扩展数据模型（扩充）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.9" data-path="../section-4/4.2.9.html">
+            
+                <a href="../section-4/4.2.9.html">
+            
+                    
+                    4.2.9. 操作定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.10" data-path="../section-4/4.2.10.html">
+            
+                <a href="../section-4/4.2.10.html">
+            
+                    
+                    4.2.10. 通知定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../section-5/">
+            
+                <a href="../section-5/">
+            
+                    
+                    5. 语言概念
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../section-5/5.1.html">
+            
+                <a href="../section-5/5.1.html">
+            
+                    
+                    5.1. 模块和子模块
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" data-path="../section-5/5.1.1.html">
+            
+                <a href="../section-5/5.1.1.html">
+            
+                    
+                    5.1.1. 导入并包含修订
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2" data-path="../section-5/5.1.2.html">
+            
+                <a href="../section-5/5.1.2.html">
+            
+                    
+                    5.1.2. 模块层次结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../section-5/5.2.html">
+            
+                <a href="../section-5/5.2.html">
+            
+                    
+                    5.2. 文件布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../section-5/5.3.html">
+            
+                <a href="../section-5/5.3.html">
+            
+                    
+                    5.3. XML名称空间
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.3.1" data-path="../section-5/5.3.1.html">
+            
+                <a href="../section-5/5.3.1.html">
+            
+                    
+                    5.3.1. YANG XML命名空间
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../section-5/5.4.html">
+            
+                <a href="../section-5/5.4.html">
+            
+                    
+                    5.4. 解决分组，类型和标识名称
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../section-5/5.5.html">
+            
+                <a href="../section-5/5.5.html">
+            
+                    
+                    5.5. 嵌套Typedef和分组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../section-5/5.6.html">
+            
+                <a href="../section-5/5.6.html">
+            
+                    
+                    5.6. 一致性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.6.1" data-path="../section-5/5.6.1.html">
+            
+                <a href="../section-5/5.6.1.html">
+            
+                    
+                    5.6.1. 基本行为
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6.2" data-path="../section-5/5.6.2.html">
+            
+                <a href="../section-5/5.6.2.html">
+            
+                    
+                    5.6.2. 可选功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6.3" data-path="../section-5/5.6.3.html">
+            
+                <a href="../section-5/5.6.3.html">
+            
+                    
+                    5.6.3. 偏差
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6.4" data-path="../section-5/5.6.4.html">
+            
+                <a href="../section-5/5.6.4.html">
+            
+                    
+                    5.6.4. 在NETCONF中公布一致性信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6.5" data-path="../section-5/5.6.5.html">
+            
+                <a href="../section-5/5.6.5.html">
+            
+                    
+                    5.6.5. 实现一个模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../section-5/5.7.html">
+            
+                <a href="../section-5/5.7.html">
+            
+                    
+                    5.7. 数据存储修改
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../section-6/">
+            
+                <a href="../section-6/">
+            
+                    
+                    6. YANG语法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../section-6/6.1.html">
+            
+                <a href="../section-6/6.1.html">
+            
+                    
+                    6.1. 词法标记
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1.1" data-path="../section-6/6.1.1.html">
+            
+                <a href="../section-6/6.1.1.html">
+            
+                    
+                    6.1.1. 注释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.2" data-path="../section-6/6.1.2.html">
+            
+                <a href="../section-6/6.1.2.html">
+            
+                    
+                    6.1.2. 令牌
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.3" data-path="../section-6/6.1.3.html">
+            
+                <a href="../section-6/6.1.3.html">
+            
+                    
+                    6.1.3. 引用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../section-6/6.2.html">
+            
+                <a href="../section-6/6.2.html">
+            
+                    
+                    6.2. 身份标识
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.2.1" data-path="../section-6/6.2.1.html">
+            
+                <a href="../section-6/6.2.1.html">
+            
+                    
+                    6.2.1. 标识符及其名称空间
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../section-6/6.3.html">
+            
+                <a href="../section-6/6.3.html">
+            
+                    
+                    6.3. 声明
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.3.1" data-path="../section-6/6.3.1.html">
+            
+                <a href="../section-6/6.3.1.html">
+            
+                    
+                    6.3.1. 语言扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../section-6/6.4.html">
+            
+                <a href="../section-6/6.4.html">
+            
+                    
+                    6.4. XPath评估
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.4.1" data-path="../section-6/6.4.1.html">
+            
+                <a href="../section-6/6.4.1.html">
+            
+                    
+                    6.4.1. XPath上下文
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../section-6/6.5.html">
+            
+                <a href="../section-6/6.5.html">
+            
+                    
+                    6.5. 模式节点标识符
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    7. YANG声明
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="7.1.html">
+            
+                <a href="7.1.html">
+            
+                    
+                    7.1. “模块”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="7.2.html">
+            
+                <a href="7.2.html">
+            
+                    
+                    7.2. “子模块”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="7.3.html">
+            
+                <a href="7.3.html">
+            
+                    
+                    7.3. “typedef”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="7.4.html">
+            
+                <a href="7.4.html">
+            
+                    
+                    7.4. “类型”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="7.5.html">
+            
+                <a href="7.5.html">
+            
+                    
+                    7.5. “容器”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="7.6.html">
+            
+                <a href="7.6.html">
+            
+                    
+                    7.6. “叶”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="7.7.html">
+            
+                <a href="7.7.html">
+            
+                    
+                    7.7. “叶列表”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8.8" data-path="7.8.html">
+            
+                <a href="7.8.html">
+            
+                    
+                    7.8. “列表”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="7.9.html">
+            
+                <a href="7.9.html">
+            
+                    
+                    7.9. “选择”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="7.10.html">
+            
+                <a href="7.10.html">
+            
+                    
+                    7.10. “anydata”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11" data-path="7.11.html">
+            
+                <a href="7.11.html">
+            
+                    
+                    7.11. “anyxml”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.12" data-path="7.12.html">
+            
+                <a href="7.12.html">
+            
+                    
+                    7.12. "分组"声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.13" data-path="7.13.html">
+            
+                <a href="7.13.html">
+            
+                    
+                    7.13. “使用”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.14" data-path="7.14.html">
+            
+                <a href="7.14.html">
+            
+                    
+                    7.14. “rpc”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.15" data-path="7.15.html">
+            
+                <a href="7.15.html">
+            
+                    
+                    7.15. “动作”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.16" data-path="7.16.html">
+            
+                <a href="7.16.html">
+            
+                    
+                    7.16. “通知”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.17" data-path="7.17.html">
+            
+                <a href="7.17.html">
+            
+                    
+                    7.17. “扩充”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.18" data-path="7.18.html">
+            
+                <a href="7.18.html">
+            
+                    
+                    7.18. “身份”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.19" data-path="7.19.html">
+            
+                <a href="7.19.html">
+            
+                    
+                    7.19. “扩展”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.20" data-path="7.20.html">
+            
+                <a href="7.20.html">
+            
+                    
+                    7.20. 一致性相关的陈述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.21" data-path="7.21.html">
+            
+                <a href="7.21.html">
+            
+                    
+                    7.21. 通用声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    8. Constraints
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" >
+            
+                <span>
+            
+                    
+                    8.1. Constraints on Data
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" >
+            
+                <span>
+            
+                    
+                    8.2. Configuration Data Modifications
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" >
+            
+                <span>
+            
+                    
+                    8.3. NETCONF Constraint Enforcement Model
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.3.1" >
+            
+                <span>
+            
+                    
+                    8.3.1. Payload Parsing
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3.2" >
+            
+                <span>
+            
+                    
+                    8.3.2. NETCONF  Processing
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3.3" >
+            
+                <span>
+            
+                    
+                    8.3.3. Validation
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    9. Built-In Types
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" >
+            
+                <span>
+            
+                    
+                    9.1. Canonical Representation
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" >
+            
+                <span>
+            
+                    
+                    9.2. The Integer Built-In Types
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" >
+            
+                <span>
+            
+                    
+                    9.3. The decimal64 Built-In Type
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" >
+            
+                <span>
+            
+                    
+                    9.4. The string Built-In Type
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" >
+            
+                <span>
+            
+                    
+                    9.5. The boolean Built-In Type
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" >
+            
+                <span>
+            
+                    
+                    9.6. The enumeration Built-In Type
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" >
+            
+                <span>
+            
+                    
+                    9.7. The bits Built-In Type
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" >
+            
+                <span>
+            
+                    
+                    9.8. The binary Built-In Type
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" >
+            
+                <span>
+            
+                    
+                    9.9. The leafref Built-In Type
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" >
+            
+                <span>
+            
+                    
+                    9.10. The identityref Built-In Type
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" >
+            
+                <span>
+            
+                    
+                    9.11. The empty Built-In Type
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.12" >
+            
+                <span>
+            
+                    
+                    9.12. The union Built-In Type
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.13" >
+            
+                <span>
+            
+                    
+                    9.13. The instance-identifier Built-In Type
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    10. XPath Functions
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    11. Updating a Module
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" >
+            
+                <span>
+            
+                    
+                    12. Coexistence with YANG Version 1
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../section-13/">
+            
+                <a href="../section-13/">
+            
+                    
+                    13. YIN
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" >
+            
+                <span>
+            
+                    
+                    13.1. Formal YIN Definition
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" >
+            
+                <span>
+            
+                    
+                    14. YANG ABNF Grammar
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" >
+            
+                <span>
+            
+                    
+                    15. NETCONF Error Responses for YANG-Related Errors
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" >
+            
+                <span>
+            
+                    
+                    15.1. Error Message for Data That Violates a "unique" Statement
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" >
+            
+                <span>
+            
+                    
+                    15.2. Error Message for Data That Violates a "max-elements" Statement
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.3" >
+            
+                <span>
+            
+                    
+                    15.3. Error Message for Data That Violates a "min-elements" Statement
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.4" >
+            
+                <span>
+            
+                    
+                    15.4. Error Message for Data That Violates a "must" Statement
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.5" >
+            
+                <span>
+            
+                    
+                    15.5. Error Message for Data That Violates a "require-instance" Statement
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.6" >
+            
+                <span>
+            
+                    
+                    15.6. Error Message for Data That Violates a Mandatory "choice" Statement
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.7" >
+            
+                <span>
+            
+                    
+                    15.7. Error Message for the "insert" Operation
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" >
+            
+                <span>
+            
+                    
+                    16. IANA Considerations
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" >
+            
+                <span>
+            
+                    
+                    17. Security Considerations
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" >
+            
+                <span>
+            
+                    
+                    18. References
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" >
+            
+                <span>
+            
+                    
+                    18.1. Normative References
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2" >
+            
+                <span>
+            
+                    
+                    18.2. Informative References
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" >
+            
+                <span>
+            
+                    
+                    Acknowledgements
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" >
+            
+                <span>
+            
+                    
+                    Contributors
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" >
+            
+                <span>
+            
+                    
+                    Author's Address
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >7.8. “列表”声明</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="78-&#x5217;&#x8868;&#x58F0;&#x660E;"><a name="78-&#x5217;&#x8868;&#x58F0;&#x660E;" class="plugin-anchor" href="#78-&#x5217;&#x8868;&#x58F0;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>7.8. &#x201C;&#x5217;&#x8868;&#x201D;&#x58F0;&#x660E;</h1>
+<p>&#x201C;<code>list</code>&#x201D;&#x8BED;&#x53E5;&#x7528;&#x4E8E;&#x5B9A;&#x4E49;&#x67B6;&#x6784;&#x6811;&#x4E2D;&#x7684;&#x5185;&#x90E8;&#x6570;&#x636E;&#x8282;&#x70B9;&#x3002; &#x5217;&#x8868;&#x8282;&#x70B9;&#x53EF;&#x80FD;&#x5B58;&#x5728;&#x4E8E;&#x6570;&#x636E;&#x6811;&#x4E2D;&#x7684;&#x591A;&#x4E2A;&#x5B9E;&#x4F8B;&#x4E2D;&#x3002; &#x6BCF;&#x4E2A;&#x8FD9;&#x6837;&#x7684;&#x5B9E;&#x4F8B;&#x88AB;&#x79F0;&#x4E3A;&#x5217;&#x8868;&#x6761;&#x76EE;&#x3002; &#x201C;<code>list</code>&#x201D;&#x8BED;&#x53E5;&#x5E26;&#x6709;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x4E00;&#x4E2A;&#x6807;&#x8BC6;&#x7B26;&#xFF0C;&#x540E;&#x8DDF;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x8BE6;&#x7EC6;&#x5217;&#x8868;&#x4FE1;&#x606F;&#x7684;&#x5B50;&#x8BED;&#x53E5;&#x5757;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x5B9A;&#x4E49;&#x4E86;&#x5217;&#x8868;&#x6761;&#x76EE;&#xFF0C;&#x5217;&#x8868;&#x6761;&#x76EE;&#x7684;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#x5C31;&#x662F;&#x5217;&#x8868;&#x7684;&#x952E;&#x503C;&#x3002;</p>
+<h2 id="781-list&#x5B50;&#x8BED;&#x53E5;"><a name="781-list&#x5B50;&#x8BED;&#x53E5;" class="plugin-anchor" href="#781-list&#x5B50;&#x8BED;&#x53E5;"><i class="fa fa-link" aria-hidden="true"></i></a>7.8.1. <code>list</code>&#x5B50;&#x8BED;&#x53E5;</h2>
+<pre><code>+--------------+---------+-------------+
+| substatement | section | cardinality |
++--------------+---------+-------------+
+| action       | 7.15    | 0..n        |
+| anydata      | 7.10    | 0..n        |
+| anyxml       | 7.11    | 0..n        |
+| choice       | 7.9     | 0..n        |
+| config       | 7.21.1  | 0..1        |
+| container    | 7.5     | 0..n        |
+| description  | 7.21.3  | 0..1        |
+| grouping     | 7.12    | 0..n        |
+| if-feature   | 7.20.2  | 0..n        |
+| key          | 7.8.2   | 0..1        |
+| leaf         | 7.6     | 0..n        |
+| leaf-list    | 7.7     | 0..n        |
+| list         | 7.8     | 0..n        |
+| max-elements | 7.7.6   | 0..1        |
+| min-elements | 7.7.5   | 0..1        |
+| must         | 7.5.3   | 0..n        |
+| notification | 7.16    | 0..n        |
+| ordered-by   | 7.7.7   | 0..1        |
+| reference    | 7.21.4  | 0..1        |
+| status       | 7.21.2  | 0..1        |
+| typedef      | 7.3     | 0..n        |
+| unique       | 7.8.3   | 0..n        |
+| uses         | 7.13    | 0..n        |
+| when         | 7.21.5  | 0..1        |
++--------------+---------+-------------+
+</code></pre><h2 id="782-&#x5217;&#x8868;&#x7684;key&#x58F0;&#x660E;"><a name="782-&#x5217;&#x8868;&#x7684;key&#x58F0;&#x660E;" class="plugin-anchor" href="#782-&#x5217;&#x8868;&#x7684;key&#x58F0;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>7.8.2. &#x5217;&#x8868;&#x7684;&#x201C;<code>key</code>&#x201D;&#x58F0;&#x660E;</h2>
+<p>&#x201C;<code>key</code>&#x201D;&#x8BED;&#x53E5;&#xFF0C;&#x5982;&#x679C;&#x5217;&#x8868;&#x8868;&#x793A;&#x914D;&#x7F6E;&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x80FD;&#x5B58;&#x5728;&#xFF0C;&#x5219;&#x5FC5;&#x987B;&#x663E;&#x793A;&#x5B83;&#xFF0C;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#xFF0C;&#x8BE5;&#x8BED;&#x53E5;&#x6307;&#x5B9A;&#x4E86;&#x8BE5;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x53F6;&#x6807;&#x8BC6;&#x7B26;&#x7684;&#x7A7A;&#x683C;&#x5206;&#x9694;&#x7684;&#x5217;&#x8868;&#x3002;&#x53F6;&#x5B50;&#x6807;&#x8BC6;&#x7B26;&#x4E0D;&#x80FD;&#x5728;<code>key</code>&#x4E2D;&#x51FA;&#x73B0;&#x4E00;&#x6B21;&#x4EE5;&#x4E0A;&#x3002; &#x6BCF;&#x4E2A;&#x8FD9;&#x6837;&#x7684;&#x53F6;&#x5B50;&#x6807;&#x8BC6;&#x7B26;&#x5FC5;&#x987B;&#x5F15;&#x7528;&#x5217;&#x8868;&#x7684;&#x5B50;&#x53F6;&#x5B50;&#x3002; &#x53F6;&#x5B50;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5728;&#x5B50;&#x5217;&#x8868;&#x4E2D;&#x5B9A;&#x4E49;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x5217;&#x8868;&#x4E2D;&#x4F7F;&#x7528;&#x5206;&#x7EC4;&#x3002;</p>
+<p><code>key</code>&#x4E2D;&#x6307;&#x5B9A;&#x7684;&#x6240;&#x6709;&#x53F6;&#x5B50;&#x7684;&#x7EC4;&#x5408;&#x503C;&#x7528;&#x4E8E;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#x5217;&#x8868;&#x6761;&#x76EE;&#x3002; &#x5728;&#x521B;&#x5EFA;&#x5217;&#x8868;&#x6761;&#x76EE;&#x65F6;&#xFF0C;&#x6240;&#x6709;&#x5173;&#x952E;&#x53F6;&#x5B50;&#x5FC5;&#x987B;&#x88AB;&#x7ED9;&#x5B9A;&#x503C;&#x3002; &#x56E0;&#x6B64;&#xFF0C;&#x5173;&#x952E;&#x53F6;&#x5B50;&#x6216;&#x5176;&#x7C7B;&#x578B;&#x4E2D;&#x7684;&#x4EFB;&#x4F55;&#x9ED8;&#x8BA4;&#x503C;&#x90FD;&#x5C06;&#x88AB;&#x5FFD;&#x7565;&#x3002; &#x5173;&#x952E;&#x53F6;&#x5B50;&#x4E2D;&#x7684;&#x4EFB;&#x4F55;&#x201C;&#x5F3A;&#x5236;&#x6027;&#x201D;&#x9648;&#x8FF0;&#x90FD;&#x5C06;&#x88AB;&#x5FFD;&#x7565;&#x3002;</p>
+<p>&#x4F5C;&#x4E3A;<code>key</code>&#x4E00;&#x90E8;&#x5206;&#x7684;&#x53F6;&#x5B50;&#x53EF;&#x4EE5;&#x662F;&#x4EFB;&#x4F55;&#x5185;&#x7F6E;&#x6216;&#x6D3E;&#x751F;&#x7C7B;&#x578B;&#x3002;</p>
+<p>&#x5217;&#x8868;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x5173;&#x952E;&#x5B57;&#x5FC5;&#x987B;&#x4E0E;&#x5217;&#x8868;&#x672C;&#x8EAB;&#x5177;&#x6709;&#x76F8;&#x540C;&#x7684;&#x201C;&#x914D;&#x7F6E;&#x201D;&#x503C;&#x3002;</p>
+<p><code>key</code>&#x5B57;&#x7B26;&#x4E32;&#x8BED;&#x6CD5;&#x7531;<a href="../section-14/README.md">&#x7B2C;14&#x8282;</a>&#x4E2D;&#x7684;&#x201C;<code>key-arg&#x201D;</code>&#x89C4;&#x5219;&#x6B63;&#x5F0F;&#x5B9A;&#x4E49;&#x3002;</p>
+<h2 id="783-&#x5217;&#x8868;&#x7684;&#x552F;&#x4E00;&#x58F0;&#x660E;"><a name="783-&#x5217;&#x8868;&#x7684;&#x552F;&#x4E00;&#x58F0;&#x660E;" class="plugin-anchor" href="#783-&#x5217;&#x8868;&#x7684;&#x552F;&#x4E00;&#x58F0;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>7.8.3. &#x5217;&#x8868;&#x7684;&#x201C;&#x552F;&#x4E00;&#x201D;&#x58F0;&#x660E;</h2>
+<p>&#x201C;<code>unique</code>&#x201D;&#x8BED;&#x53E5;&#x7528;&#x4E8E;&#x5BF9;&#x6709;&#x6548;&#x7684;&#x5217;&#x8868;&#x6761;&#x76EE;&#x8FDB;&#x884C;&#x7EA6;&#x675F;&#x3002; &#x5B83;&#x4EE5;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#xFF0C;&#x8BE5;&#x5B57;&#x7B26;&#x4E32;&#x5305;&#x542B;&#x7A7A;&#x95F4;&#x5206;&#x9694;&#x7684;&#x6A21;&#x5F0F;&#x8282;&#x70B9;&#x6807;&#x8BC6;&#x7B26;&#x5217;&#x8868;&#xFF0C;&#x5FC5;&#x987B;&#x4EE5;&#x540E;&#x4EE3;&#x5F62;&#x5F0F;&#x7ED9;&#x51FA;&#xFF08;&#x53C2;&#x89C1;<a href="../section-14/README.md">&#x7B2C;14&#x8282;</a>&#x4E2D;&#x7684;&#x201C;<code>descendant-schema-nodeid</code>&#x201D;&#x89C4;&#x5219;&#xFF09;&#x3002; &#x6BCF;&#x4E2A;&#x8FD9;&#x6837;&#x7684;&#x6A21;&#x5F0F;&#x8282;&#x70B9;&#x6807;&#x8BC6;&#x7B26;&#x5FC5;&#x987B;&#x6307;&#x5411;&#x4E00;&#x4E2A;&#x53F6;&#x5B50;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x5F15;&#x7528;&#x7684;&#x53F6;&#x5B50;&#x4EE3;&#x8868;&#x914D;&#x7F6E;&#x6570;&#x636E;&#xFF0C;&#x90A3;&#x4E48;&#x6240;&#x6709;&#x5F15;&#x7528;&#x7684;&#x53F6;&#x5B50;&#x5FC5;&#x987B;&#x4EE3;&#x8868;&#x914D;&#x7F6E;&#x6570;&#x636E;&#x3002;</p>
+<p>&#x201C;<code>unique</code>&#x201D;&#x7EA6;&#x675F;&#x6307;&#x5B9A;&#x53C2;&#x6570;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x6307;&#x5B9A;&#x7684;&#x6240;&#x6709;&#x53F6;&#x5B50;&#x5B9E;&#x4F8B;&#x7684;&#x7EC4;&#x5408;&#x503C;&#xFF0C;&#x5305;&#x62EC;&#x5177;&#x6709;&#x9ED8;&#x8BA4;&#x503C;&#x7684;&#x53F6;&#x5B50;&#xFF0C;&#x5728;&#x6240;&#x6709;&#x5F15;&#x7528;&#x53F6;&#x5B50;&#x5B58;&#x5728;&#x6216;&#x5177;&#x6709;&#x9ED8;&#x8BA4;&#x503C;&#x7684;&#x6240;&#x6709;&#x5217;&#x8868;&#x9879;&#x5B9E;&#x4F8B;&#x4E2D;&#x5FC5;&#x987B;&#x662F;&#x552F;&#x4E00;&#x7684;&#x3002; &#x7EA6;&#x675F;&#x6761;&#x4EF6;&#x6309;&#x7167;<a href="../section-8/README.md">&#x7B2C;8&#x8282;</a>&#x7684;&#x89C4;&#x5B9A;&#x6267;&#x884C;&#x3002;</p>
+<p>&#x552F;&#x4E00;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x8BED;&#x6CD5;&#x7531;<a href="../section-14/README.md">&#x7B2C;14&#x8282;</a>&#x4E2D;&#x7684;&#x201C;<code>unique-arg</code>&#x201D;&#x89C4;&#x5219;&#x6B63;&#x5F0F;&#x5B9A;&#x4E49;&#x3002;</p>
+<h3 id="7831-&#x4F7F;&#x7528;&#x793A;&#x4F8B;"><a name="7831-&#x4F7F;&#x7528;&#x793A;&#x4F8B;" class="plugin-anchor" href="#7831-&#x4F7F;&#x7528;&#x793A;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>7.8.3.1. &#x4F7F;&#x7528;&#x793A;&#x4F8B;</h3>
+<p>&#x7528;&#x4E0B;&#x9762;&#x7684;&#x5217;&#x8868;&#xFF1A;</p>
+<pre><code>list server {
+  key &quot;name&quot;;
+  unique &quot;ip port&quot;;
+  leaf name {
+    type string;
+  }
+  leaf ip {
+    type inet:ip-address;
+  }
+  leaf port {
+    type inet:port-number;
+  }
+}
+</code></pre><p>&#x4EE5;&#x4E0B;&#x914D;&#x7F6E;&#x65E0;&#x6548;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">server</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>smtp<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">ip</span>&gt;</span>192.0.2.1<span class="hljs-tag">&lt;/<span class="hljs-name">ip</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">port</span>&gt;</span>25<span class="hljs-tag">&lt;/<span class="hljs-name">port</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">server</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">server</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>http<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">ip</span>&gt;</span>192.0.2.1<span class="hljs-tag">&lt;/<span class="hljs-name">ip</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">port</span>&gt;</span>25<span class="hljs-tag">&lt;/<span class="hljs-name">port</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">server</span>&gt;</span>
+</code></pre>
+<p>&#x4EE5;&#x4E0B;&#x914D;&#x7F6E;&#x662F;&#x6709;&#x6548;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x201C;<code>http</code>&#x201D;&#x548C;&#x201C;<code>ftp</code>&#x201D;&#x5217;&#x8868;&#x9879;&#x4E0D;&#x5177;&#x6709;&#x6240;&#x6709;&#x5F15;&#x7528;&#x53F6;&#x5B50;&#x7684;&#x503C;&#xFF0C;&#x56E0;&#x6B64;&#x5F53;&#x201C;&#x552F;&#x4E00;&#x201D;&#x7EA6;&#x675F;&#x88AB;&#x5F3A;&#x5236;&#x6267;&#x884C;&#x65F6;&#x4E0D;&#x88AB;&#x8003;&#x8651;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">server</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>smtp<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">ip</span>&gt;</span>192.0.2.1<span class="hljs-tag">&lt;/<span class="hljs-name">ip</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">port</span>&gt;</span>25<span class="hljs-tag">&lt;/<span class="hljs-name">port</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">server</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">server</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>http<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">ip</span>&gt;</span>192.0.2.1<span class="hljs-tag">&lt;/<span class="hljs-name">ip</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">server</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">server</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>ftp<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">ip</span>&gt;</span>192.0.2.1<span class="hljs-tag">&lt;/<span class="hljs-name">ip</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">server</span>&gt;</span>
+</code></pre>
+<h2 id="784-&#x5217;&#x8868;&#x7684;&#x5B50;&#x8282;&#x70B9;&#x8BED;&#x53E5;"><a name="784-&#x5217;&#x8868;&#x7684;&#x5B50;&#x8282;&#x70B9;&#x8BED;&#x53E5;" class="plugin-anchor" href="#784-&#x5217;&#x8868;&#x7684;&#x5B50;&#x8282;&#x70B9;&#x8BED;&#x53E5;"><i class="fa fa-link" aria-hidden="true"></i></a>7.8.4. &#x5217;&#x8868;&#x7684;&#x5B50;&#x8282;&#x70B9;&#x8BED;&#x53E5;</h2>
+<p>&#x5728;&#x5217;&#x8868;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x201C;<code>container</code>&#x201D;&#xFF0C;&#x201C;<code>leaf</code>&#x201D;&#xFF0C;&#x201C;<code>list</code>&#x201D;&#xFF0C;&#x201C;<code>leaf-list</code>&#x201D;&#xFF0C;&#x201C;<code>uses</code>&#x201D;&#xFF0C;&#x201C;<code>choice</code>&#x201D;&#xFF0C;&#x201C;<code>anydata</code>&#x201D;&#x548C;&#x201C;<code>anyxml</code>&#x201D;&#x8BED;&#x53E5;&#x6765;&#x5C06;&#x5B50;&#x8282;&#x70B9;&#x5B9A;&#x4E49;&#x5230;&#x5217;&#x8868;&#x3002;</p>
+<h2 id="785-xml&#x7F16;&#x7801;&#x89C4;&#x5219;"><a name="785-xml&#x7F16;&#x7801;&#x89C4;&#x5219;" class="plugin-anchor" href="#785-xml&#x7F16;&#x7801;&#x89C4;&#x5219;"><i class="fa fa-link" aria-hidden="true"></i></a>7.8.5. <code>XML</code>&#x7F16;&#x7801;&#x89C4;&#x5219;</h2>
+<p>&#x5217;&#x8868;&#x88AB;&#x7F16;&#x7801;&#x4E3A;&#x4E00;&#x7CFB;&#x5217;<code>XML</code>&#x5143;&#x7D20;&#xFF0C;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x6761;&#x76EE;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x3002;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x672C;&#x5730;&#x540D;&#x79F0;&#x662F;&#x5217;&#x8868;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#xFF0C;&#x5176;&#x540D;&#x79F0;&#x7A7A;&#x95F4;&#x662F;&#x6A21;&#x5757;&#x7684;<code>XML</code>&#x540D;&#x79F0;&#x7A7A;&#x95F4;&#xFF08;&#x53C2;&#x89C1;<a href="7.1.html#713-namespace&#x58F0;&#x660E;">&#x7B2C;7.1.3&#x8282;</a>&#xFF09;&#x3002;&#x6574;&#x4E2A;&#x5217;&#x8868;&#x4E2D;&#x6CA1;&#x6709;<code>XML</code>&#x5143;&#x7D20;&#x3002;</p>
+<p>&#x5217;&#x8868;&#x7684;&#x5173;&#x952E;&#x8282;&#x70B9;&#x88AB;&#x7F16;&#x7801;&#x4E3A;&#x5217;&#x8868;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#x5143;&#x7D20;&#x7684;&#x5B50;&#x5143;&#x7D20;&#xFF0C;&#x5176;&#x987A;&#x5E8F;&#x4E0E;&#x201C;<code>key</code>&#x201D;&#x8BED;&#x53E5;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x987A;&#x5E8F;&#x76F8;&#x540C;&#x3002;</p>
+<p>&#x5217;&#x8868;&#x7684;&#x5176;&#x4F59;&#x90E8;&#x5206;&#x7684;&#x5B50;&#x8282;&#x70B9;&#x88AB;&#x7F16;&#x7801;&#x4E3A;&#x5217;&#x8868;&#x5143;&#x7D20;&#x7684;&#x5B50;&#x5143;&#x7D20;&#x3002;&#x5982;&#x679C;&#x5217;&#x8868;&#x5B9A;&#x4E49;&#x4E86;<code>RPC</code>&#x6216;&#x64CD;&#x4F5C;&#x8F93;&#x5165;&#x6216;&#x8F93;&#x51FA;&#x53C2;&#x6570;&#xFF0C;&#x5219;&#x5B50;&#x5143;&#x7D20;&#x5C06;&#x6309;&#x7167;&#x201C;<code>list</code>&#x201D;&#x8BED;&#x53E5;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x987A;&#x5E8F;&#x8FDB;&#x884C;&#x7F16;&#x7801;&#x3002;&#x5426;&#x5219;&#xFF0C;&#x5B50;&#x5143;&#x7D20;&#x6309;&#x4EFB;&#x4F55;&#x987A;&#x5E8F;&#x7F16;&#x7801;&#x3002;</p>
+<p>&#x5217;&#x8868;&#x6761;&#x76EE;&#x7684;&#x5B50;&#x5143;&#x7D20;&#x4E4B;&#x95F4;&#x7684;&#x4EFB;&#x4F55;&#x7A7A;&#x683C;&#x662F;&#x4E0D;&#x91CD;&#x8981;&#x7684;&#xFF0C;&#x5373;&#x5B9E;&#x73B0;&#x53EF;&#x4EE5;&#x5728;&#x5B50;&#x5143;&#x7D20;&#x4E4B;&#x95F4;&#x63D2;&#x5165;&#x7A7A;&#x767D;&#x5B57;&#x7B26;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x5217;&#x8868;&#x662F;&#x201C;<code>ordered-by user</code>&#x201D;&#xFF0C;&#x5219;&#x8868;&#x793A;&#x5217;&#x8868;&#x6761;&#x76EE;&#x7684;<code>XML</code>&#x5143;&#x7D20;&#x5FC5;&#x987B;&#x6309;&#x7528;&#x6237;&#x6307;&#x5B9A;&#x7684;&#x987A;&#x5E8F;&#x51FA;&#x73B0;;&#x5426;&#x5219;&#xFF0C;&#x987A;&#x5E8F;&#x4F9D;&#x8D56;&#x4E8E;&#x5B9E;&#x73B0;&#x3002;&#x8868;&#x793A;&#x5217;&#x8868;&#x6761;&#x76EE;&#x7684;<code>XML</code>&#x5143;&#x7D20;&#x53EF;&#x4EE5;&#x4E0E;&#x5217;&#x8868;&#x7684;&#x540C;&#x7EA7;&#x5143;&#x7D20;&#x4EA4;&#x9519;&#xFF0C;&#x9664;&#x975E;&#x5217;&#x8868;&#x5B9A;&#x4E49;&#x4E86;<code>RPC</code>&#x6216;&#x52A8;&#x4F5C;&#x8F93;&#x5165;&#x6216;&#x8F93;&#x51FA;&#x53C2;&#x6570;&#x3002;</p>
+<h2 id="786-netconf-edit-config&#x64CD;&#x4F5C;"><a name="786-netconf-edit-config&#x64CD;&#x4F5C;" class="plugin-anchor" href="#786-netconf-edit-config&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>7.8.6. <code>NETCONF</code> <code>&lt;edit-config&gt;</code>&#x64CD;&#x4F5C;</h2>
+<p>&#x5217;&#x8868;&#x6761;&#x76EE;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4F7F;&#x7528;&#x5217;&#x8868;<code>XML</code>&#x5143;&#x7D20;&#x4E2D;&#x7684;&#x201C;<code>operation</code>&#x201D;&#x5C5E;&#x6027;&#x901A;&#x8FC7;<code>&lt;edit-config&gt;</code>&#x521B;&#x5EFA;&#xFF0C;&#x5220;&#x9664;&#xFF0C;&#x66FF;&#x6362;&#x548C;&#x4FEE;&#x6539;&#x3002;&#x5728;&#x6BCF;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6240;&#x6709;<code>key</code>&#x7684;&#x503C;&#x90FD;&#x7528;&#x4E8E;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#x5217;&#x8868;&#x6761;&#x76EE;&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x4E3A;&#x5217;&#x8868;&#x9879;&#x6307;&#x5B9A;&#x6240;&#x6709;&#x952E;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x201C;<code>missing-element</code>&#x201D;&#x9519;&#x8BEF;&#x3002;</p>
+<p>&#x5728;&#x201C;<code>ordered-by user</code>&#x201D;&#x5217;&#x8868;&#x4E2D;&#xFF0C;<code>YANG</code> <code>XML</code>&#x540D;&#x79F0;&#x7A7A;&#x95F4;&#xFF08;<a href="../section-5/5.3.1.html">&#x7B2C;5.3.1&#x8282;</a>&#xFF09;&#x4E2D;&#x7684;&#x5C5E;&#x6027;&#x201C;<code>insert</code>&#x201D;&#x548C;&#x201C;<code>key</code>&#x201D;&#x53EF;&#x7528;&#x4E8E;&#x63A7;&#x5236;&#x5217;&#x8868;&#x4E2D;&#x63D2;&#x5165;&#x6761;&#x76EE;&#x7684;&#x4F4D;&#x7F6E;&#x3002;&#x8FD9;&#x4E9B;&#x53EF;&#x4EE5;&#x5728;&#x201C;<code>create</code>&#x201D;&#x64CD;&#x4F5C;&#x671F;&#x95F4;&#x7528;&#x4E8E;&#x63D2;&#x5165;&#x65B0;&#x7684;&#x5217;&#x8868;&#x6761;&#x76EE;&#xFF0C;&#x6216;&#x5728;&#x201C;<code>merge</code>&#x201D;&#x6216;&#x201C;<code>replace</code>&#x201D;&#x64CD;&#x4F5C;&#x671F;&#x95F4;&#x63D2;&#x5165;&#x65B0;&#x7684;&#x5217;&#x8868;&#x6761;&#x76EE;&#x6216;&#x79FB;&#x52A8;&#x73B0;&#x6709;&#x6761;&#x76EE;&#x3002;</p>
+<p>&#x201C;<code>insert</code>&#x201D;&#x5C5E;&#x6027;&#x53EF;&#x4EE5;&#x53D6;&#x503C;&#x201C;<code>first</code>&#x201D;&#xFF0C;&#x201C;<code>last</code>&#x201D;&#xFF0C;&#x201C;<code>before</code>&#x201D;&#x548C;&#x201C;<code>after</code>&#x201D;&#x3002;&#x5982;&#x679C;&#x503C;&#x662F;&#x201C;<code>before</code>&#x201D;&#x6216;&#x201C;<code>after</code>&#x201D;&#xFF0C;&#x5219;&#x8FD8;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x201C;<code>key</code>&#x201D;&#x5C5E;&#x6027;&#x6765;&#x6307;&#x5B9A;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x73B0;&#x6709;&#x5143;&#x7D20;&#x3002; &#x201C;<code>key</code>&#x201D;&#x5C5E;&#x6027;&#x7684;&#x503C;&#x662F;&#x5217;&#x8868;&#x6761;&#x76EE;&#x7684;&#x5B8C;&#x6574;&#x5B9E;&#x4F8B;&#x6807;&#x8BC6;&#x7B26;&#xFF08;&#x89C1;<a href="../section-9/9.13.md">&#x7B2C;9.13&#x8282;</a>&#xFF09;&#x7684;&#x5173;&#x952E;&#x8C13;&#x8BCD;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x5728;&#x201C;<code>create</code>&#x201D;&#x64CD;&#x4F5C;&#x4E2D;&#x6CA1;&#x6709;&#x201C;<code>insert</code>&#x201D;&#x5C5E;&#x6027;&#xFF0C;&#x5219;&#x9ED8;&#x8BA4;&#x4E3A;&#x201C;<code>last</code>&#x201D;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x201C;<code>ordered-by user</code>&#x201D;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x591A;&#x4E2A;&#x6761;&#x76EE;&#x5728;&#x540C;&#x4E00;&#x4E2A;<code>&lt;edit-config&gt;</code>&#x8BF7;&#x6C42;&#x4E2D;&#x88AB;&#x4FEE;&#x6539;&#xFF0C;&#x5219;&#x6309;&#x8BF7;&#x6C42;&#x4E2D;<code>XML</code>&#x5143;&#x7D20;&#x7684;&#x987A;&#x5E8F;&#x4E00;&#x6B21;&#x4FEE;&#x6539;&#x4E00;&#x4E2A;&#x6761;&#x76EE;&#x3002;</p>
+<p>&#x5728;&#x5177;&#x6709;&#x8986;&#x76D6;&#x6574;&#x4E2A;&#x5217;&#x8868;&#x7684;&#x201C;<code>replace</code>&#x201D;&#x64CD;&#x4F5C;&#x7684;<code>&lt;copy-config&gt;</code>&#x6216;<code>&lt;edit-config&gt;</code>&#x4E2D;&#xFF0C;&#x5217;&#x8868;&#x8F93;&#x5165;&#x987A;&#x5E8F;&#x4E0E;&#x8BF7;&#x6C42;&#x4E2D;<code>XML</code>&#x5143;&#x7D20;&#x7684;&#x987A;&#x5E8F;&#x76F8;&#x540C;&#x3002;</p>
+<p>&#x5F53;<code>NETCONF</code>&#x670D;&#x52A1;&#x5668;&#x5904;&#x7406;<code>&lt;edit-config&gt;</code>&#x8BF7;&#x6C42;&#x65F6;&#xFF0C;&#x5217;&#x8868;&#x8282;&#x70B9;&#x7684;&#x8FC7;&#x7A0B;&#x5143;&#x7D20;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<ul>
+<li><p>&#x5982;&#x679C;&#x64CD;&#x4F5C;&#x662F;&#x201C;<code>merge</code>&#x201D;&#x6216;&#x201C;<code>replace</code>&#x201D;&#xFF0C;&#x5219;&#x5217;&#x8868;&#x6761;&#x76EE;&#x5982;&#x679C;&#x4E0D;&#x5B58;&#x5728;&#x5219;&#x521B;&#x5EFA;&#x3002;&#x5982;&#x679C;&#x5217;&#x8868;&#x6761;&#x76EE;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#xFF0C;&#x5E76;&#x4E14;&#x5B58;&#x5728;&#x201C;<code>insert</code>&#x201D;&#x548C;&#x201C;<code>key</code>&#x201D;&#x5C5E;&#x6027;&#xFF0C;&#x5219;&#x6839;&#x636E;&#x201C;<code>insert</code>&#x201D;&#x548C;&#x201C;<code>key</code>&#x201D;&#x5C5E;&#x6027;&#x7684;&#x503C;&#x79FB;&#x52A8;&#x5217;&#x8868;&#x6761;&#x76EE;&#x3002;&#x5982;&#x679C;&#x5217;&#x8868;&#x6761;&#x76EE;&#x5B58;&#x5728;&#x5E76;&#x4E14;&#x201C;<code>insert</code>&#x201D;&#x548C;&#x201C;<code>key</code>&#x201D;&#x5C5E;&#x6027;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x5219;&#x5217;&#x8868;&#x6761;&#x76EE;&#x4E0D;&#x4F1A;&#x79FB;&#x52A8;&#x3002;</p>
+</li>
+<li><p>&#x5982;&#x679C;&#x64CD;&#x4F5C;&#x662F;&#x201C;<code>create</code>&#x201D;&#xFF0C;&#x5219;&#x5217;&#x8868;&#x6761;&#x76EE;&#x5982;&#x679C;&#x4E0D;&#x5B58;&#x5728;&#x5219;&#x521B;&#x5EFA;&#x3002;&#x5982;&#x679C;&#x5217;&#x8868;&#x9879;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x201C;<code>data-exists</code>&#x201D;&#x9519;&#x8BEF;&#x3002;</p>
+</li>
+<li><p>&#x5982;&#x679C;&#x64CD;&#x4F5C;&#x662F;&#x201C;<code>delete</code>&#x201D;&#xFF0C;&#x5219;&#x6761;&#x76EE;&#x4ECE;&#x5217;&#x8868;&#x4E2D;&#x5220;&#x9664;&#xFF08;&#x5982;&#x679C;&#x5B58;&#x5728;&#xFF09;&#x3002;&#x5982;&#x679C;&#x5217;&#x8868;&#x6761;&#x76EE;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x201C;<code>data-missing</code>&#x201D;&#x9519;&#x8BEF;&#x3002;</p>
+</li>
+</ul>
+<h2 id="787-&#x4F7F;&#x7528;&#x793A;&#x4F8B;"><a name="787-&#x4F7F;&#x7528;&#x793A;&#x4F8B;" class="plugin-anchor" href="#787-&#x4F7F;&#x7528;&#x793A;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>7.8.7. &#x4F7F;&#x7528;&#x793A;&#x4F8B;</h2>
+<p>&#x9274;&#x4E8E;&#x4EE5;&#x4E0B;&#x5217;&#x8868;&#xFF1A;</p>
+<pre><code class="lang-YANG">list user {
+  key &quot;name&quot;;
+  config true;
+  description
+    &quot;This is a list of users in the system.&quot;;
+
+  leaf name {
+    type string;
+  }
+  leaf type {
+    type string;
+  }
+  leaf full-name {
+    type string;
+  }
+}
+</code></pre>
+<p>&#x76F8;&#x5E94;&#x7684;<code>XML</code>&#x5B9E;&#x4F8B;&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">user</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>fred<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">type</span>&gt;</span>admin<span class="hljs-tag">&lt;/<span class="hljs-name">type</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">full-name</span>&gt;</span>Fred Flintstone<span class="hljs-tag">&lt;/<span class="hljs-name">full-name</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">user</span>&gt;</span>
+</code></pre>
+<p>&#x8981;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x7528;&#x6237;&#x201C;<code>barney</code>&#x201D;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">rpc</span> <span class="hljs-attr">message-id</span>=<span class="hljs-string">&quot;101&quot;</span>
+     <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot;</span>
+     <span class="hljs-attr">xmlns:nc</span>=<span class="hljs-string">&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">edit-config</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">target</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">running</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">target</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">config</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">system</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;urn:example:config&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">user</span> <span class="hljs-attr">nc:operation</span>=<span class="hljs-string">&quot;create&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>barney<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">type</span>&gt;</span>admin<span class="hljs-tag">&lt;/<span class="hljs-name">type</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">full-name</span>&gt;</span>Barney Rubble<span class="hljs-tag">&lt;/<span class="hljs-name">full-name</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">user</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">system</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">config</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">edit-config</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">rpc</span>&gt;</span>
+</code></pre>
+<p>&#x8981;&#x5C06;&#x201C;<code>fred</code>&#x201D;&#x7684;&#x7C7B;&#x578B;&#x66F4;&#x6539;&#x4E3A;&#x201C;<code>superuser</code>&#x201D;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">rpc</span> <span class="hljs-attr">message-id</span>=<span class="hljs-string">&quot;102&quot;</span>
+     <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot;</span>
+     <span class="hljs-attr">xmlns:nc</span>=<span class="hljs-string">&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">edit-config</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">target</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">running</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">target</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">config</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">system</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;urn:example:config&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">user</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>fred<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">type</span>&gt;</span>superuser<span class="hljs-tag">&lt;/<span class="hljs-name">type</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">user</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">system</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">config</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">edit-config</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">rpc</span>&gt;</span>
+</code></pre>
+<p>&#x7ED9;&#x51FA;&#x4EE5;&#x4E0B;&#x6309;&#x7528;&#x6237;&#x5217;&#x8868;&#xFF1A;</p>
+<pre><code class="lang-YANG">list user {
+  description
+    &quot;This is a list of users in the system.&quot;;
+  ordered-by user;
+  config true;
+
+  key &quot;first-name surname&quot;;
+
+  leaf first-name {
+    type string;
+  }
+  leaf surname {
+    type string;
+  }
+  leaf type {
+    type string;
+  }
+}
+</code></pre>
+<p>&#x4EE5;&#x4E0B;&#x5C06;&#x7528;&#x4E8E;&#x5728;&#x7528;&#x6237;&#x201C;<code>fred flintstone</code>&#x201D;&#x4E4B;&#x540E;&#x63D2;&#x5165;&#x65B0;&#x7528;&#x6237;&#x201C;<code>barney rubble</code>&#x201D;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">rpc</span> <span class="hljs-attr">message-id</span>=<span class="hljs-string">&quot;101&quot;</span>
+     <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot;</span>
+     <span class="hljs-attr">xmlns:nc</span>=<span class="hljs-string">&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot;</span>
+     <span class="hljs-attr">xmlns:yang</span>=<span class="hljs-string">&quot;urn:ietf:params:xml:ns:yang:1&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">edit-config</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">target</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">running</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">target</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">config</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">system</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;urn:example:config&quot;</span>
+           <span class="hljs-attr">xmlns:ex</span>=<span class="hljs-string">&quot;urn:example:config&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">user</span> <span class="hljs-attr">nc:operation</span>=<span class="hljs-string">&quot;create&quot;</span>
+              <span class="hljs-attr">yang:insert</span>=<span class="hljs-string">&quot;after&quot;</span>
+              <span class="hljs-attr">yang:key</span>=<span class="hljs-string">&quot;[ex:first-name=&apos;fred&apos;]
+                        [ex:surname=&apos;flintstone&apos;]&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">first-name</span>&gt;</span>barney<span class="hljs-tag">&lt;/<span class="hljs-name">first-name</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">surname</span>&gt;</span>rubble<span class="hljs-tag">&lt;/<span class="hljs-name">surname</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">type</span>&gt;</span>admin<span class="hljs-tag">&lt;/<span class="hljs-name">type</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">user</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">system</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">config</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">edit-config</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">rpc</span>&gt;</span>
+</code></pre>
+<p>&#x4EE5;&#x4E0B;&#x5C06;&#x7528;&#x4E8E;&#x5728;&#x7528;&#x6237;&#x201C;<code>fred flintstone</code>&#x201D;&#x4E4B;&#x524D;&#x79FB;&#x52A8;&#x7528;&#x6237;&#x201C;<code>barney rubble</code>&#x201D;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">rpc</span> <span class="hljs-attr">message-id</span>=<span class="hljs-string">&quot;102&quot;</span>
+     <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot;</span>
+     <span class="hljs-attr">xmlns:nc</span>=<span class="hljs-string">&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot;</span>
+     <span class="hljs-attr">xmlns:yang</span>=<span class="hljs-string">&quot;urn:ietf:params:xml:ns:yang:1&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">edit-config</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">target</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">running</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">target</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">config</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">system</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;urn:example:config&quot;</span>
+           <span class="hljs-attr">xmlns:ex</span>=<span class="hljs-string">&quot;urn:example:config&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">user</span> <span class="hljs-attr">nc:operation</span>=<span class="hljs-string">&quot;merge&quot;</span>
+              <span class="hljs-attr">yang:insert</span>=<span class="hljs-string">&quot;before&quot;</span>
+              <span class="hljs-attr">yang:key</span>=<span class="hljs-string">&quot;[ex:name=&apos;fred&apos;]
+                        [ex:surname=&apos;flintstone&apos;]&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">first-name</span>&gt;</span>barney<span class="hljs-tag">&lt;/<span class="hljs-name">first-name</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">surname</span>&gt;</span>rubble<span class="hljs-tag">&lt;/<span class="hljs-name">surname</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">user</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">system</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">config</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">edit-config</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">rpc</span>&gt;</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="7.7.html" class="navigation navigation-prev " aria-label="Previous page: 7.7. “叶列表”声明">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="7.9.html" class="navigation navigation-next " aria-label="Next page: 7.9. “选择”声明">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"7.8. “列表”声明","level":"1.8.8","depth":2,"next":{"title":"7.9. “选择”声明","level":"1.8.9","depth":2,"path":"section-7/7.9.md","ref":"section-7/7.9.md","articles":[]},"previous":{"title":"7.7. “叶列表”声明","level":"1.8.7","depth":2,"path":"section-7/7.7.md","ref":"section-7/7.7.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchors","ga"],"pluginsConfig":{"ga":{"configuration":"auto","token":"UA-80673215-1"},"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"section-7/7.8.md","mtime":"2018-01-28T16:54:44.088Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-28T16:54:54.539Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

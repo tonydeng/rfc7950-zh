@@ -1,0 +1,1855 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>7.21. 通用声明 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="7.20.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    关于RFC7950中文翻译
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../section-1/">
+            
+                <a href="../section-1/">
+            
+                    
+                    1. 介绍
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../section-1/1.1.html">
+            
+                <a href="../section-1/1.1.html">
+            
+                    
+                    1.1. RFC 6020的变化摘要
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../section-2/">
+            
+                <a href="../section-2/">
+            
+                    
+                    2. 关键词
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../section-3/">
+            
+                <a href="../section-3/">
+            
+                    
+                    3. 术语
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../section-3/3.1.html">
+            
+                <a href="../section-3/3.1.html">
+            
+                    
+                    3.1. 关于例子的一个注释
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../section-4/">
+            
+                <a href="../section-4/">
+            
+                    
+                    4. YANG概述
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../section-4/4.1.html">
+            
+                <a href="../section-4/4.1.html">
+            
+                    
+                    4.1. 功能概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../section-4/4.2.html">
+            
+                <a href="../section-4/4.2.html">
+            
+                    
+                    4.2. 语言概述
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../section-4/4.2.1.html">
+            
+                <a href="../section-4/4.2.1.html">
+            
+                    
+                    4.2.1. 模块和子模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="../section-4/4.2.2.html">
+            
+                <a href="../section-4/4.2.2.html">
+            
+                    
+                    4.2.2. 数据建模基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="../section-4/4.2.3.html">
+            
+                <a href="../section-4/4.2.3.html">
+            
+                    
+                    4.2.3. 配置和状态数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.4" data-path="../section-4/4.2.4.html">
+            
+                <a href="../section-4/4.2.4.html">
+            
+                    
+                    4.2.4. 内置类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.5" data-path="../section-4/4.2.5.html">
+            
+                <a href="../section-4/4.2.5.html">
+            
+                    
+                    4.2.5. 派生类型（typedef）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.6" data-path="../section-4/4.2.6.html">
+            
+                <a href="../section-4/4.2.6.html">
+            
+                    
+                    4.2.6. 可重复使用的节点组（分组）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.7" data-path="../section-4/4.2.7.html">
+            
+                <a href="../section-4/4.2.7.html">
+            
+                    
+                    4.2.7. 选择
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.8" data-path="../section-4/4.2.8.html">
+            
+                <a href="../section-4/4.2.8.html">
+            
+                    
+                    4.2.8. 扩展数据模型（扩充）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.9" data-path="../section-4/4.2.9.html">
+            
+                <a href="../section-4/4.2.9.html">
+            
+                    
+                    4.2.9. 操作定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.10" data-path="../section-4/4.2.10.html">
+            
+                <a href="../section-4/4.2.10.html">
+            
+                    
+                    4.2.10. 通知定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../section-5/">
+            
+                <a href="../section-5/">
+            
+                    
+                    5. 语言概念
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../section-5/5.1.html">
+            
+                <a href="../section-5/5.1.html">
+            
+                    
+                    5.1. 模块和子模块
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" data-path="../section-5/5.1.1.html">
+            
+                <a href="../section-5/5.1.1.html">
+            
+                    
+                    5.1.1. 导入并包含修订
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2" data-path="../section-5/5.1.2.html">
+            
+                <a href="../section-5/5.1.2.html">
+            
+                    
+                    5.1.2. 模块层次结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../section-5/5.2.html">
+            
+                <a href="../section-5/5.2.html">
+            
+                    
+                    5.2. 文件布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../section-5/5.3.html">
+            
+                <a href="../section-5/5.3.html">
+            
+                    
+                    5.3. XML名称空间
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.3.1" data-path="../section-5/5.3.1.html">
+            
+                <a href="../section-5/5.3.1.html">
+            
+                    
+                    5.3.1. YANG XML命名空间
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../section-5/5.4.html">
+            
+                <a href="../section-5/5.4.html">
+            
+                    
+                    5.4. 解决分组，类型和标识名称
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../section-5/5.5.html">
+            
+                <a href="../section-5/5.5.html">
+            
+                    
+                    5.5. 嵌套Typedef和分组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../section-5/5.6.html">
+            
+                <a href="../section-5/5.6.html">
+            
+                    
+                    5.6. 一致性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.6.1" data-path="../section-5/5.6.1.html">
+            
+                <a href="../section-5/5.6.1.html">
+            
+                    
+                    5.6.1. 基本行为
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6.2" data-path="../section-5/5.6.2.html">
+            
+                <a href="../section-5/5.6.2.html">
+            
+                    
+                    5.6.2. 可选功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6.3" data-path="../section-5/5.6.3.html">
+            
+                <a href="../section-5/5.6.3.html">
+            
+                    
+                    5.6.3. 偏差
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6.4" data-path="../section-5/5.6.4.html">
+            
+                <a href="../section-5/5.6.4.html">
+            
+                    
+                    5.6.4. 在NETCONF中公布一致性信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6.5" data-path="../section-5/5.6.5.html">
+            
+                <a href="../section-5/5.6.5.html">
+            
+                    
+                    5.6.5. 实现一个模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../section-5/5.7.html">
+            
+                <a href="../section-5/5.7.html">
+            
+                    
+                    5.7. 数据存储修改
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../section-6/">
+            
+                <a href="../section-6/">
+            
+                    
+                    6. YANG语法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../section-6/6.1.html">
+            
+                <a href="../section-6/6.1.html">
+            
+                    
+                    6.1. 词法标记
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1.1" data-path="../section-6/6.1.1.html">
+            
+                <a href="../section-6/6.1.1.html">
+            
+                    
+                    6.1.1. 注释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.2" data-path="../section-6/6.1.2.html">
+            
+                <a href="../section-6/6.1.2.html">
+            
+                    
+                    6.1.2. 令牌
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.3" data-path="../section-6/6.1.3.html">
+            
+                <a href="../section-6/6.1.3.html">
+            
+                    
+                    6.1.3. 引用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../section-6/6.2.html">
+            
+                <a href="../section-6/6.2.html">
+            
+                    
+                    6.2. 身份标识
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.2.1" data-path="../section-6/6.2.1.html">
+            
+                <a href="../section-6/6.2.1.html">
+            
+                    
+                    6.2.1. 标识符及其名称空间
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../section-6/6.3.html">
+            
+                <a href="../section-6/6.3.html">
+            
+                    
+                    6.3. 声明
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.3.1" data-path="../section-6/6.3.1.html">
+            
+                <a href="../section-6/6.3.1.html">
+            
+                    
+                    6.3.1. 语言扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../section-6/6.4.html">
+            
+                <a href="../section-6/6.4.html">
+            
+                    
+                    6.4. XPath评估
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.4.1" data-path="../section-6/6.4.1.html">
+            
+                <a href="../section-6/6.4.1.html">
+            
+                    
+                    6.4.1. XPath上下文
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../section-6/6.5.html">
+            
+                <a href="../section-6/6.5.html">
+            
+                    
+                    6.5. 模式节点标识符
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    7. YANG声明
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="7.1.html">
+            
+                <a href="7.1.html">
+            
+                    
+                    7.1. “模块”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="7.2.html">
+            
+                <a href="7.2.html">
+            
+                    
+                    7.2. “子模块”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="7.3.html">
+            
+                <a href="7.3.html">
+            
+                    
+                    7.3. “typedef”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="7.4.html">
+            
+                <a href="7.4.html">
+            
+                    
+                    7.4. “类型”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="7.5.html">
+            
+                <a href="7.5.html">
+            
+                    
+                    7.5. “容器”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="7.6.html">
+            
+                <a href="7.6.html">
+            
+                    
+                    7.6. “叶”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="7.7.html">
+            
+                <a href="7.7.html">
+            
+                    
+                    7.7. “叶列表”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="7.8.html">
+            
+                <a href="7.8.html">
+            
+                    
+                    7.8. “列表”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="7.9.html">
+            
+                <a href="7.9.html">
+            
+                    
+                    7.9. “选择”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="7.10.html">
+            
+                <a href="7.10.html">
+            
+                    
+                    7.10. “anydata”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11" data-path="7.11.html">
+            
+                <a href="7.11.html">
+            
+                    
+                    7.11. “anyxml”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.12" data-path="7.12.html">
+            
+                <a href="7.12.html">
+            
+                    
+                    7.12. "分组"声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.13" data-path="7.13.html">
+            
+                <a href="7.13.html">
+            
+                    
+                    7.13. “使用”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.14" data-path="7.14.html">
+            
+                <a href="7.14.html">
+            
+                    
+                    7.14. “rpc”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.15" data-path="7.15.html">
+            
+                <a href="7.15.html">
+            
+                    
+                    7.15. “动作”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.16" data-path="7.16.html">
+            
+                <a href="7.16.html">
+            
+                    
+                    7.16. “通知”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.17" data-path="7.17.html">
+            
+                <a href="7.17.html">
+            
+                    
+                    7.17. “扩充”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.18" data-path="7.18.html">
+            
+                <a href="7.18.html">
+            
+                    
+                    7.18. “身份”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.19" data-path="7.19.html">
+            
+                <a href="7.19.html">
+            
+                    
+                    7.19. “扩展”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.20" data-path="7.20.html">
+            
+                <a href="7.20.html">
+            
+                    
+                    7.20. 一致性相关的陈述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8.21" data-path="7.21.html">
+            
+                <a href="7.21.html">
+            
+                    
+                    7.21. 通用声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    8. Constraints
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" >
+            
+                <span>
+            
+                    
+                    8.1. Constraints on Data
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" >
+            
+                <span>
+            
+                    
+                    8.2. Configuration Data Modifications
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" >
+            
+                <span>
+            
+                    
+                    8.3. NETCONF Constraint Enforcement Model
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.3.1" >
+            
+                <span>
+            
+                    
+                    8.3.1. Payload Parsing
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3.2" >
+            
+                <span>
+            
+                    
+                    8.3.2. NETCONF  Processing
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3.3" >
+            
+                <span>
+            
+                    
+                    8.3.3. Validation
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    9. Built-In Types
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" >
+            
+                <span>
+            
+                    
+                    9.1. Canonical Representation
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" >
+            
+                <span>
+            
+                    
+                    9.2. The Integer Built-In Types
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" >
+            
+                <span>
+            
+                    
+                    9.3. The decimal64 Built-In Type
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" >
+            
+                <span>
+            
+                    
+                    9.4. The string Built-In Type
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" >
+            
+                <span>
+            
+                    
+                    9.5. The boolean Built-In Type
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" >
+            
+                <span>
+            
+                    
+                    9.6. The enumeration Built-In Type
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" >
+            
+                <span>
+            
+                    
+                    9.7. The bits Built-In Type
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" >
+            
+                <span>
+            
+                    
+                    9.8. The binary Built-In Type
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" >
+            
+                <span>
+            
+                    
+                    9.9. The leafref Built-In Type
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" >
+            
+                <span>
+            
+                    
+                    9.10. The identityref Built-In Type
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" >
+            
+                <span>
+            
+                    
+                    9.11. The empty Built-In Type
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.12" >
+            
+                <span>
+            
+                    
+                    9.12. The union Built-In Type
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.13" >
+            
+                <span>
+            
+                    
+                    9.13. The instance-identifier Built-In Type
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    10. XPath Functions
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    11. Updating a Module
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" >
+            
+                <span>
+            
+                    
+                    12. Coexistence with YANG Version 1
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../section-13/">
+            
+                <a href="../section-13/">
+            
+                    
+                    13. YIN
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" >
+            
+                <span>
+            
+                    
+                    13.1. Formal YIN Definition
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" >
+            
+                <span>
+            
+                    
+                    14. YANG ABNF Grammar
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" >
+            
+                <span>
+            
+                    
+                    15. NETCONF Error Responses for YANG-Related Errors
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" >
+            
+                <span>
+            
+                    
+                    15.1. Error Message for Data That Violates a "unique" Statement
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" >
+            
+                <span>
+            
+                    
+                    15.2. Error Message for Data That Violates a "max-elements" Statement
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.3" >
+            
+                <span>
+            
+                    
+                    15.3. Error Message for Data That Violates a "min-elements" Statement
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.4" >
+            
+                <span>
+            
+                    
+                    15.4. Error Message for Data That Violates a "must" Statement
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.5" >
+            
+                <span>
+            
+                    
+                    15.5. Error Message for Data That Violates a "require-instance" Statement
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.6" >
+            
+                <span>
+            
+                    
+                    15.6. Error Message for Data That Violates a Mandatory "choice" Statement
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.7" >
+            
+                <span>
+            
+                    
+                    15.7. Error Message for the "insert" Operation
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" >
+            
+                <span>
+            
+                    
+                    16. IANA Considerations
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" >
+            
+                <span>
+            
+                    
+                    17. Security Considerations
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" >
+            
+                <span>
+            
+                    
+                    18. References
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" >
+            
+                <span>
+            
+                    
+                    18.1. Normative References
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2" >
+            
+                <span>
+            
+                    
+                    18.2. Informative References
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" >
+            
+                <span>
+            
+                    
+                    Acknowledgements
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" >
+            
+                <span>
+            
+                    
+                    Contributors
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" >
+            
+                <span>
+            
+                    
+                    Author's Address
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >7.21. 通用声明</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="721-&#x901A;&#x7528;&#x58F0;&#x660E;"><a name="721-&#x901A;&#x7528;&#x58F0;&#x660E;" class="plugin-anchor" href="#721-&#x901A;&#x7528;&#x58F0;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>7.21. &#x901A;&#x7528;&#x58F0;&#x660E;</h1>
+<p>&#x672C;&#x8282;&#x5B9A;&#x4E49;&#x4E86;&#x51E0;&#x4E2A;&#x5176;&#x4ED6;&#x8BED;&#x53E5;&#x901A;&#x7528;&#x7684;&#x5B50;&#x8BED;&#x53E5;&#x3002;</p>
+<h2 id="7211-config&#x58F0;&#x660E;"><a name="7211-config&#x58F0;&#x660E;" class="plugin-anchor" href="#7211-config&#x58F0;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>7.21.1. &#x201C;<code>config</code>&#x201D;&#x58F0;&#x660E;</h2>
+<p>&#x201C;<code>config</code>&#x201D;&#x8BED;&#x53E5;&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x201C;<code>true</code>&#x201D;&#x6216;&#x201C;<code>false</code>&#x201D;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x3002; &#x5982;&#x679C;&#x201C;<code>config</code>&#x201D;&#x662F;&#x201C;<code>true</code>&#x201D;&#xFF0C;&#x5219;&#x5B9A;&#x4E49;&#x4EE3;&#x8868;&#x914D;&#x7F6E;&#x3002; &#x8868;&#x793A;&#x914D;&#x7F6E;&#x7684;&#x6570;&#x636E;&#x8282;&#x70B9;&#x662F;&#x914D;&#x7F6E;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x201C;<code>config</code>&#x201D;&#x662F;&#x201C;<code>false</code>&#x201D;&#xFF0C;&#x5219;&#x5B9A;&#x4E49;&#x8868;&#x793A;&#x72B6;&#x6001;&#x6570;&#x636E;&#x3002; &#x8868;&#x793A;&#x72B6;&#x6001;&#x6570;&#x636E;&#x7684;&#x6570;&#x636E;&#x8282;&#x70B9;&#x4E0D;&#x662F;&#x914D;&#x7F6E;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x672A;&#x6307;&#x5B9A;&#x201C;<code>config</code>&#x201D;&#xFF0C;&#x5219;&#x7F3A;&#x7701;&#x503C;&#x4E0E;&#x7236;&#x67B6;&#x6784;&#x8282;&#x70B9;&#x7684;&#x201C;<code>config</code>&#x201D;&#x503C;&#x76F8;&#x540C;&#x3002; &#x5982;&#x679C;&#x7236;&#x8282;&#x70B9;&#x662F;&#x4E00;&#x4E2A;<code>case</code>&#x8282;&#x70B9;&#xFF0C;&#x5219;&#x8BE5;&#x503C;&#x4E0E;<code>case</code>&#x8282;&#x70B9;&#x7684;&#x7236;&#x8282;&#x70B9;&#x9009;&#x62E9;&#x8282;&#x70B9;&#x76F8;&#x540C;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x9876;&#x5C42;&#x8282;&#x70B9;&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#x201C;<code>config</code>&#x201D;&#x8BED;&#x53E5;&#xFF0C;&#x5219;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;&#x201C;<code>true</code>&#x201D;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x201C;<code>config</code>&#x201D;&#x8BBE;&#x7F6E;&#x4E3A;&#x201C;<code>false</code>&#x201D;&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x4E0B;&#x9762;&#x7684;&#x4EFB;&#x4F55;&#x8282;&#x70B9;&#x90FD;&#x4E0D;&#x80FD;&#x5C06;&#x201C;<code>config</code>&#x201D;&#x8BBE;&#x7F6E;&#x4E3A;&#x201C;<code>true</code>&#x201D;&#x3002;</p>
+<h2 id="7212--status&#x58F0;&#x660E;"><a name="7212--status&#x58F0;&#x660E;" class="plugin-anchor" href="#7212--status&#x58F0;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>7.21.2.  &#x201C;<code>status</code>&#x201D;&#x58F0;&#x660E;</h2>
+<p>&#x201C;<code>status</code>&#x201D;&#x8BED;&#x53E5;&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x201C;<code>current</code>&#x201D;&#xFF0C;&#x201C;<code>deprecated</code>&#x201D;&#x6216;&#x201C;<code>obsolete</code>&#x201D;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x4E4B;&#x4E00;&#x3002;</p>
+<ul>
+<li><p>&#x201C;<code>current</code>&#x201D;&#x662F;&#x6307;&#x5B9A;&#x4E49;&#x662F;&#x5F53;&#x524D;&#x548C;&#x6709;&#x6548;&#x7684;&#x3002;</p>
+</li>
+<li><p>&#x201C;<code>deprecated</code>&#x201D;&#x8868;&#x793A;&#x4E00;&#x4E2A;&#x9648;&#x65E7;&#x7684;&#x5B9A;&#x4E49;&#xFF0C;&#x4F46;&#x5B83;&#x5141;&#x8BB8;<code>new/continued</code>&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x4EE5;&#x4FC3;&#x8FDB;&#x4E0E;<code>older/existing</code>&#x7684;&#x5B9E;&#x73B0;&#x7684;&#x4E92;&#x64CD;&#x4F5C;&#x6027;&#x3002;</p>
+</li>
+<li><p>&#x201C;<code>obsolete</code>&#x201D;&#x610F;&#x5473;&#x7740;&#x8BE5;&#x5B9A;&#x4E49;&#x5DF2;&#x7ECF;&#x8FC7;&#x65F6;&#xFF0C;&#x5E76;&#x4E14;&#x4E0D;&#x5E94;&#x8BE5;&#x88AB;&#x5B9E;&#x73B0;<code>and/or</code>&#x53EF;&#x4EE5;&#x4ECE;&#x5B9E;&#x73B0;&#x4E2D;&#x53BB;&#x9664;&#x3002;</p>
+</li>
+</ul>
+<p>&#x5982;&#x679C;&#x672A;&#x6307;&#x5B9A;&#x72B6;&#x6001;&#xFF0C;&#x5219;&#x9ED8;&#x8BA4;&#x4E3A;&#x201C;<code>current</code>&#x201D;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x5B9A;&#x4E49;&#x4E3A;&#x201C;<code>current</code>&#x201D;&#xFF0C;&#x5219;&#x4E0D;&#x5F97;&#x5728;&#x540C;&#x4E00;&#x6A21;&#x5757;&#x4E2D;&#x5F15;&#x7528;&#x201C;<code>deprecated</code>&#x201D;&#x6216;&#x201C;<code>obsolete</code>&#x201D;&#x7684;&#x5B9A;&#x4E49;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x5B9A;&#x4E49;&#x4E3A;&#x201C;<code>deprecated</code>&#x201D;&#xFF0C;&#x5219;&#x4E0D;&#x5F97;&#x5728;&#x540C;&#x4E00;&#x6A21;&#x5757;&#x4E2D;&#x5F15;&#x7528;&#x201C;<code>obsolete</code>&#x201D;&#x5B9A;&#x4E49;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x4EE5;&#x4E0B;&#x662F;&#x975E;&#x6CD5;&#x7684;&#xFF1A;</p>
+<pre><code class="lang-YANG">typedef my-type {
+  status deprecated;
+  type int32;
+}
+
+leaf my-leaf {
+  status current;
+  type my-type; // &#x975E;&#x6CD5;&#x7684;&#xFF0C;&#x56E0;&#x4E3A; my-type &#x5DF2;&#x88AB;&#x5F03;&#x7528;
+}
+</code></pre>
+<h2 id="7213-description&#x58F0;&#x660E;"><a name="7213-description&#x58F0;&#x660E;" class="plugin-anchor" href="#7213-description&#x58F0;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>7.21.3. &#x201C;<code>description</code>&#x201D;&#x58F0;&#x660E;</h2>
+<p>&#x201C;<code>description</code>&#x201D;&#x8BED;&#x53E5;&#x5C06;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#xFF0C;&#x8BE5;&#x5B57;&#x7B26;&#x4E32;&#x5305;&#x542B;&#x5BF9;&#x6B64;&#x5B9A;&#x4E49;&#x7684;&#x53EF;&#x8BFB;&#x6587;&#x672C;&#x63CF;&#x8FF0;&#x3002; &#x6587;&#x672C;&#x4EE5;&#x6A21;&#x5757;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x9009;&#x62E9;&#x7684;&#x8BED;&#x8A00;&#xFF08;&#x6216;&#x591A;&#x79CD;&#x8BED;&#x8A00;&#xFF09;&#x63D0;&#x4F9B;; &#x4E3A;&#x4E86;&#x4E92;&#x64CD;&#x4F5C;&#x6027;&#xFF0C;&#x5EFA;&#x8BAE;&#x9009;&#x62E9;&#x4E00;&#x79CD;&#x5728;&#x5C06;&#x4F7F;&#x7528;&#x8BE5;&#x6A21;&#x5757;&#x7684;&#x7F51;&#x7EDC;&#x7BA1;&#x7406;&#x5458;&#x793E;&#x533A;&#x4E2D;&#x5E7F;&#x6CDB;&#x7406;&#x89E3;&#x7684;&#x8BED;&#x8A00;&#x3002;</p>
+<h2 id="7214-reference&#x58F0;&#x660E;"><a name="7214-reference&#x58F0;&#x660E;" class="plugin-anchor" href="#7214-reference&#x58F0;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>7.21.4. &#x201C;<code>reference</code>&#x201D;&#x58F0;&#x660E;</h2>
+<p>&#x201C;<code>reference</code>&#x201D;&#x8BED;&#x53E5;&#x5C06;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#xFF0C;&#x8FD9;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x8BFB;&#x7684;&#x4EA4;&#x53C9;&#x5F15;&#x7528;&#x7684;&#x5916;&#x90E8;&#x6587;&#x6863; - &#x5B9A;&#x4E49;&#x76F8;&#x5173;&#x7BA1;&#x7406;&#x4FE1;&#x606F;&#x7684;&#x53E6;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x6216;&#x63D0;&#x4F9B;&#x4E0E;&#x6B64;&#x5B9A;&#x4E49;&#x6709;&#x5173;&#x7684;&#x9644;&#x52A0;&#x4FE1;&#x606F;&#x7684;&#x6587;&#x6863;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x201C;<code>uri</code>&#x201D;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7684;<code>typedef</code>&#x53EF;&#x80FD;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code class="lang-YANG">typedef uri {
+  type string;
+  reference
+    &quot;RFC 3986: Uniform Resource Identifier (URI): Generic Syntax&quot;;
+  ...
+}
+</code></pre>
+<h2 id="7215-when&#x58F0;&#x660E;"><a name="7215-when&#x58F0;&#x660E;" class="plugin-anchor" href="#7215-when&#x58F0;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>7.21.5. &#x201C;<code>when</code>&#x201D;&#x58F0;&#x660E;</h2>
+<p>&#x201C;<code>when</code>&#x201D;&#x8BED;&#x53E5;&#x4F7F;&#x5176;&#x7236;&#x6570;&#x636E;&#x5B9A;&#x4E49;&#x8BED;&#x53E5;&#x6709;&#x6761;&#x4EF6;&#x3002;&#x7236;&#x6570;&#x636E;&#x5B9A;&#x4E49;&#x8BED;&#x53E5;&#x5B9A;&#x4E49;&#x7684;&#x8282;&#x70B9;&#x53EA;&#x6709;&#x5728;&#x6EE1;&#x8DB3;&#x201C;<code>when</code>&#x201D;&#x8BED;&#x53E5;&#x6307;&#x5B9A;&#x7684;&#x6761;&#x4EF6;&#x65F6;&#x624D;&#x6709;&#x6548;&#x3002;&#x8BE5;&#x8BED;&#x53E5;&#x7684;&#x53C2;&#x6570;&#x662F;&#x4E00;&#x4E2A;XPath&#x8868;&#x8FBE;&#x5F0F;&#xFF08;&#x8BF7;&#x53C2;&#x9605;<a href="../section-6/6.4.html">&#x7B2C;6.4&#x8282;</a>&#xFF09;&#xFF0C;&#x7528;&#x4E8E;&#x6B63;&#x5F0F;&#x6307;&#x5B9A;&#x6B64;&#x6761;&#x4EF6;&#x3002;&#x5982;&#x679C;<code>XPath</code>&#x8868;&#x8FBE;&#x5F0F;&#x5728;&#x6982;&#x5FF5;&#x4E0A;&#x5BF9;&#x4E8E;&#x7279;&#x5B9A;&#x5B9E;&#x4F8B;&#x7684;&#x8BA1;&#x7B97;&#x7ED3;&#x679C;&#x4E3A;&#x201C;<code>true</code>&#x201D;&#xFF0C;&#x5219;&#x7531;&#x7236;&#x6570;&#x636E;&#x5B9A;&#x4E49;&#x8BED;&#x53E5;&#x5B9A;&#x4E49;&#x7684;&#x8282;&#x70B9;&#x662F;&#x6709;&#x6548;&#x7684;;&#x5426;&#x5219;&#xFF0C;&#x5B83;&#x4E0D;&#x662F;&#x3002;</p>
+<p>&#x4F5C;&#x4E3A;&#x5217;&#x8868;&#x952E;&#x7684;&#x53F6;&#x5B50;&#x4E0D;&#x80FD;&#x6709;&#x201C;<code>when</code>&#x201D;&#x8BED;&#x53E5;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x5728;&#x5217;&#x8868;&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x5206;&#x7EC4;&#x4E2D;&#x5B9A;&#x4E49;&#x4E86;&#x952E;&#x53F6;&#xFF0C;&#x90A3;&#x4E48;&#x201C;<code>uses</code>&#x201D;&#x8BED;&#x53E5;&#x4E0D;&#x80FD;&#x6709;&#x201C;<code>when</code>&#x201D;&#x8BED;&#x53E5;&#x3002;</p>
+<p>&#x6709;&#x5173;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#xFF0C;&#x8BF7;&#x53C2;&#x9605;&#x7B2C;<a href="../section-8/8.3.2.md">8.3.2&#x8282;</a>&#x3002;</p>
+<p>&#x9664;&#x4E86;<a href="../section-6/6.4.1.html">&#x7B2C;6.4.1&#x8282;</a>&#x4E2D;&#x7684;&#x5B9A;&#x4E49;&#x4E4B;&#x5916;&#xFF0C;<code>XPath</code>&#x8868;&#x8FBE;&#x5F0F;&#x5728;&#x4EE5;&#x4E0B;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#x6982;&#x5FF5;&#x6027;&#x5730;&#x8BC4;&#x4F30;&#xFF1A;</p>
+<ul>
+<li><p>&#x5982;&#x679C;&#x201C;<code>when</code>&#x201D;&#x8BED;&#x53E5;&#x662F;&#x201C;<code>augment</code>&#x201D;&#x8BED;&#x53E5;&#x7684;&#x5B69;&#x5B50;&#xFF0C;&#x90A3;&#x4E48;&#x5982;&#x679C;&#x76EE;&#x6807;&#x8282;&#x70B9;&#x662F;&#x6570;&#x636E;&#x8282;&#x70B9;&#xFF0C;&#x5219;&#x4E0A;&#x4E0B;&#x6587;&#x8282;&#x70B9;&#x662F;&#x6570;&#x636E;&#x6811;&#x4E2D;&#x6269;&#x5145;&#x7684;&#x76EE;&#x6807;&#x8282;&#x70B9;&#x3002;&#x5426;&#x5219;&#xFF0C;&#x4E0A;&#x4E0B;&#x6587;&#x8282;&#x70B9;&#x662F;&#x4E0E;&#x4E5F;&#x662F;&#x6570;&#x636E;&#x8282;&#x70B9;&#x7684;&#x76EE;&#x6807;&#x8282;&#x70B9;&#x6700;&#x63A5;&#x8FD1;&#x7684;&#x7956;&#x5148;&#x8282;&#x70B9;&#x3002;&#x5982;&#x679C;&#x4E0D;&#x5B58;&#x5728;&#x8FD9;&#x6837;&#x7684;&#x8282;&#x70B9;&#xFF0C;&#x5219;&#x4E0A;&#x4E0B;&#x6587;&#x8282;&#x70B9;&#x662F;&#x6839;&#x8282;&#x70B9;&#x3002;&#x5728;&#x5904;&#x7406;<code>XPath</code>&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x901A;&#x8FC7;&#x5220;&#x9664;&#x7531;&#x201C;<code>augment</code>&#x201D;&#x8BED;&#x53E5;&#x6DFB;&#x52A0;&#x7684;&#x8282;&#x70B9;&#x7684;&#x6240;&#x6709;&#x5B9E;&#x4F8B;&#xFF08;&#x5982;&#x679C;&#x6709;&#x7684;&#x8BDD;&#xFF09;&#xFF0C;&#x53EF;&#x8BBF;&#x95EE;&#x6811;&#x6682;&#x65F6;&#x88AB;&#x6539;&#x53D8;&#x3002;</p>
+</li>
+<li><p>&#x5982;&#x679C;&#x201C;<code>when</code>&#x201D;&#x8BED;&#x53E5;&#x662F;&#x201C;<code>uses</code>&#x201D;&#xFF0C;&#x201C;<code>choice</code>&#x201D;&#x6216;&#x201C;<code>case</code>&#x201D;&#x8BED;&#x53E5;&#x7684;&#x5B50;&#x8BED;&#xFF0C;&#x90A3;&#x4E48;&#x4E0A;&#x4E0B;&#x6587;&#x8282;&#x70B9;&#x662F;&#x4E0E;&#x8282;&#x70B9;&#x6700;&#x63A5;&#x8FD1;&#x7684;&#x7956;&#x5148;&#x8282;&#x70B9;&#xFF0C;&#x201C;<code>when</code>&#x201D;&#x8BED;&#x53E5;&#x4E5F;&#x662F;&#x6570;&#x636E;&#x8282;&#x70B9;&#x3002;&#x5982;&#x679C;&#x4E0D;&#x5B58;&#x5728;&#x8FD9;&#x6837;&#x7684;&#x8282;&#x70B9;&#xFF0C;&#x5219;&#x4E0A;&#x4E0B;&#x6587;&#x8282;&#x70B9;&#x662F;&#x6839;&#x8282;&#x70B9;&#x3002;&#x5728;&#x5904;&#x7406;<code>XPath</code>&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x901A;&#x8FC7;&#x5220;&#x9664;&#x7531;&#x201C;<code>uses</code>&#x201D;&#xFF0C;&#x201C;<code>choice</code>&#x201D;&#x6216;&#x201C;<code>case</code>&#x201D;&#x8BED;&#x53E5;&#x6DFB;&#x52A0;&#x7684;&#x8282;&#x70B9;&#x7684;&#x6240;&#x6709;&#x5B9E;&#x4F8B;&#xFF08;&#x5982;&#x679C;&#x6709;&#x7684;&#x8BDD;&#xFF09;&#xFF0C;&#x53EF;&#x8BBF;&#x95EE;&#x6811;&#x6682;&#x65F6;&#x88AB;&#x6539;&#x53D8;&#x3002;</p>
+</li>
+<li><p>&#x5982;&#x679C;&#x201C;<code>when</code>&#x201D;&#x8BED;&#x53E5;&#x662F;&#x4EFB;&#x4F55;&#x5176;&#x4ED6;&#x6570;&#x636E;&#x5B9A;&#x4E49;&#x8BED;&#x53E5;&#x7684;&#x5B69;&#x5B50;&#xFF0C;&#x5219;&#x5728;&#x5904;&#x7406;<code>XPath</code>&#x8868;&#x8FBE;&#x5F0F;&#x65F6;&#xFF0C;&#x53EF;&#x8BBF;&#x95EE;&#x7684;&#x6811;&#x4F1A;&#x88AB;&#x6682;&#x65F6;&#x66F4;&#x6539;&#xFF0C;&#x65B9;&#x6CD5;&#x662F;&#x5C06;&#x6240;&#x6709;&#x5B9A;&#x4E49;&#x4E86;&#x201C;<code>when</code>&#x201D;&#x8BED;&#x53E5;&#x7684;&#x6570;&#x636E;&#x8282;&#x70B9;&#x7684;&#x5B9E;&#x4F8B;&#x66FF;&#x6362;&#x4E3A;&#x5355;&#x4E2A;&#x5177;&#x6709;&#x76F8;&#x540C;&#x540D;&#x79F0;&#x7684;&#x865A;&#x62DF;&#x8282;&#x70B9;&#xFF0C;&#x4F46;&#x6CA1;&#x6709;&#x503C;&#x548C;&#x6CA1;&#x6709;&#x5B50;&#x8282;&#x70B9;&#x3002;&#x5982;&#x679C;&#x4E0D;&#x5B58;&#x5728;&#x8FD9;&#x6837;&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x5219;&#x6682;&#x65F6;&#x521B;&#x5EFA;&#x865A;&#x62DF;&#x8282;&#x70B9;&#x3002;&#x4E0A;&#x4E0B;&#x6587;&#x8282;&#x70B9;&#x662F;&#x8FD9;&#x4E2A;&#x865A;&#x62DF;&#x8282;&#x70B9;&#x3002;</p>
+</li>
+</ul>
+<p>&#x4F7F;&#x7528;&#x6807;&#x51C6;&#x7684;<code>XPath</code>&#x89C4;&#x5219;&#x5C06;<code>XPath</code>&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x7ED3;&#x679C;&#x8F6C;&#x6362;&#x4E3A;&#x5E03;&#x5C14;&#x503C;&#x3002;</p>
+<p>&#x5982;&#x679C;<code>XPath</code>&#x8868;&#x8FBE;&#x5F0F;&#x5F15;&#x7528;&#x4EFB;&#x4F55;&#x4E5F;&#x6709;&#x5173;&#x8054;&#x201C;<code>when</code>&#x201D;&#x8BED;&#x53E5;&#x7684;&#x8282;&#x70B9;&#xFF0C;&#x5219;&#x5FC5;&#x987B;&#x9996;&#x5148;&#x8BA1;&#x7B97;&#x8FD9;&#x4E9B;&#x201C;<code>when</code>&#x201D;&#x8868;&#x8FBE;&#x5F0F;&#x3002;&#x5728;&#x201C;<code>when</code>&#x201D;&#x8868;&#x8FBE;&#x5F0F;&#x4E4B;&#x95F4;&#x4E0D;&#x80FD;&#x6709;&#x5FAA;&#x73AF;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#x3002;</p>
+<p>&#x8BF7;&#x6CE8;&#x610F;&#xFF0C;<code>XPath</code>&#x8868;&#x8FBE;&#x5F0F;&#x662F;&#x5728;&#x6982;&#x5FF5;&#x4E0A;&#x8BC4;&#x4F30;&#x7684;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x5B9E;&#x73B0;&#x4E0D;&#x5FC5;&#x5728;&#x670D;&#x52A1;&#x5668;&#x4E2D;&#x4F7F;&#x7528;<code>XPath</code>&#x8BC4;&#x4F30;&#x7A0B;&#x5E8F;&#x3002; &#x201C;<code>when</code>&#x201D;&#x8BED;&#x53E5;&#x53EF;&#x4EE5;&#x5F88;&#x597D;&#x5730;&#x7528;&#x4E13;&#x95E8;&#x7F16;&#x5199;&#x7684;&#x4EE3;&#x7801;&#x6765;&#x5B9E;&#x73B0;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="7.20.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 7.20. 一致性相关的陈述">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"7.21. 通用声明","level":"1.8.21","depth":2,"next":{"title":"8. Constraints","level":"1.9","depth":1,"ref":"","articles":[{"title":"8.1. Constraints on Data","level":"1.9.1","depth":2,"ref":"","articles":[]},{"title":"8.2. Configuration Data Modifications","level":"1.9.2","depth":2,"ref":"","articles":[]},{"title":"8.3. NETCONF Constraint Enforcement Model","level":"1.9.3","depth":2,"ref":"","articles":[{"title":"8.3.1. Payload Parsing","level":"1.9.3.1","depth":3,"ref":"","articles":[]},{"title":"8.3.2. NETCONF  Processing","level":"1.9.3.2","depth":3,"ref":"","articles":[]},{"title":"8.3.3. Validation","level":"1.9.3.3","depth":3,"ref":"","articles":[]}]}]},"previous":{"title":"7.20. 一致性相关的陈述","level":"1.8.20","depth":2,"path":"section-7/7.20.md","ref":"section-7/7.20.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchors","ga"],"pluginsConfig":{"ga":{"configuration":"auto","token":"UA-80673215-1"},"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"section-7/7.21.md","mtime":"2018-01-28T16:54:44.086Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-28T16:54:54.539Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
