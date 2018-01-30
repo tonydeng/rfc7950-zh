@@ -92,7 +92,7 @@
     - [9.13. 实例标识符内置类型](section-9/9.13.md)
 - [10. XPath Functions]()
 - [11. Updating a Module]()
-- [12. Coexistence with YANG Version 1]()
+- [12. 与YANG版本1共存](section-12/README.md)
 - [13. YIN](section-13/README.md)
     - [13.1. Formal YIN Definition]()
 - [14. YANG ABNF Grammar]()
