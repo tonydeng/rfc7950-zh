@@ -94,7 +94,7 @@
 - [11. Updating a Module]()
 - [12. 与YANG版本1共存](section-12/README.md)
 - [13. YIN](section-13/README.md)
-    - [13.1. Formal YIN Definition]()
+    - [13.1. 正式的YIN定义](section-13/13.1.md)
 - [14. YANG ABNF Grammar]()
 - [15. NETCONF Error Responses for YANG-Related Errors]()
     - [15.1. Error Message for Data That Violates a "unique" Statement]()
