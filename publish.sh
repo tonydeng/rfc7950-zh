@@ -13,8 +13,8 @@ git pull origin gh-pages --rebase
 cp -R _book/* .
 
 # remove 'node_modules' and '_book' directory
-git clean -fx node_modules
-git clean -fx _book
+# git clean -fx node_modules
+# git clean -fx _book
 
 # add all files
 git add .
