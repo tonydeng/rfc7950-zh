@@ -90,7 +90,7 @@
     - [9.11. 空的内置类型](section-9/9.11.md)
     - [9.12. 联合内置类型](section-9/9.12.md)
     - [9.13. 实例标识符内置类型](section-9/9.13.md)
-- [10. XPath Functions]()
+- [10. XPath函数](section-10/README.md)
 - [11. Updating a Module]()
 - [12. 与YANG版本1共存](section-12/README.md)
 - [13. YIN](section-13/README.md)
