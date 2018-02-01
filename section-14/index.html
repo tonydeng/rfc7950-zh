@@ -1,0 +1,2850 @@
+
+<!DOCTYPE HTML>
+<html lang="zh" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>14. YANG ABNF语法 · YANG 1.1 数据建模语言</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../section-15/" />
+    
+    
+    <link rel="prev" href="../section-13/13.1.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"tonydeng/rfc7950-zh","types":["star","watch","fork"],"size":"small"};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    关于RFC7950中文翻译
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../section-1/">
+            
+                <a href="../section-1/">
+            
+                    
+                    1. 介绍
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../section-1/1.1.html">
+            
+                <a href="../section-1/1.1.html">
+            
+                    
+                    1.1. RFC 6020的变化摘要
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../section-2/">
+            
+                <a href="../section-2/">
+            
+                    
+                    2. 关键词
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../section-3/">
+            
+                <a href="../section-3/">
+            
+                    
+                    3. 术语
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../section-3/3.1.html">
+            
+                <a href="../section-3/3.1.html">
+            
+                    
+                    3.1. 关于例子的一个注释
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../section-4/">
+            
+                <a href="../section-4/">
+            
+                    
+                    4. YANG概述
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../section-4/4.1.html">
+            
+                <a href="../section-4/4.1.html">
+            
+                    
+                    4.1. 功能概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../section-4/4.2.html">
+            
+                <a href="../section-4/4.2.html">
+            
+                    
+                    4.2. 语言概述
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../section-4/4.2.1.html">
+            
+                <a href="../section-4/4.2.1.html">
+            
+                    
+                    4.2.1. 模块和子模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="../section-4/4.2.2.html">
+            
+                <a href="../section-4/4.2.2.html">
+            
+                    
+                    4.2.2. 数据建模基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="../section-4/4.2.3.html">
+            
+                <a href="../section-4/4.2.3.html">
+            
+                    
+                    4.2.3. 配置和状态数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.4" data-path="../section-4/4.2.4.html">
+            
+                <a href="../section-4/4.2.4.html">
+            
+                    
+                    4.2.4. 内置类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.5" data-path="../section-4/4.2.5.html">
+            
+                <a href="../section-4/4.2.5.html">
+            
+                    
+                    4.2.5. 派生类型（typedef）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.6" data-path="../section-4/4.2.6.html">
+            
+                <a href="../section-4/4.2.6.html">
+            
+                    
+                    4.2.6. 可重复使用的节点组（分组）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.7" data-path="../section-4/4.2.7.html">
+            
+                <a href="../section-4/4.2.7.html">
+            
+                    
+                    4.2.7. 选择
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.8" data-path="../section-4/4.2.8.html">
+            
+                <a href="../section-4/4.2.8.html">
+            
+                    
+                    4.2.8. 扩展数据模型（扩充）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.9" data-path="../section-4/4.2.9.html">
+            
+                <a href="../section-4/4.2.9.html">
+            
+                    
+                    4.2.9. 操作定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.10" data-path="../section-4/4.2.10.html">
+            
+                <a href="../section-4/4.2.10.html">
+            
+                    
+                    4.2.10. 通知定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../section-5/">
+            
+                <a href="../section-5/">
+            
+                    
+                    5. 语言概念
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../section-5/5.1.html">
+            
+                <a href="../section-5/5.1.html">
+            
+                    
+                    5.1. 模块和子模块
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" data-path="../section-5/5.1.1.html">
+            
+                <a href="../section-5/5.1.1.html">
+            
+                    
+                    5.1.1. 导入并包含修订
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2" data-path="../section-5/5.1.2.html">
+            
+                <a href="../section-5/5.1.2.html">
+            
+                    
+                    5.1.2. 模块层次结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../section-5/5.2.html">
+            
+                <a href="../section-5/5.2.html">
+            
+                    
+                    5.2. 文件布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../section-5/5.3.html">
+            
+                <a href="../section-5/5.3.html">
+            
+                    
+                    5.3. XML名称空间
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.3.1" data-path="../section-5/5.3.1.html">
+            
+                <a href="../section-5/5.3.1.html">
+            
+                    
+                    5.3.1. YANG XML命名空间
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../section-5/5.4.html">
+            
+                <a href="../section-5/5.4.html">
+            
+                    
+                    5.4. 解决分组，类型和标识名称
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../section-5/5.5.html">
+            
+                <a href="../section-5/5.5.html">
+            
+                    
+                    5.5. 嵌套Typedef和分组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../section-5/5.6.html">
+            
+                <a href="../section-5/5.6.html">
+            
+                    
+                    5.6. 一致性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.6.1" data-path="../section-5/5.6.1.html">
+            
+                <a href="../section-5/5.6.1.html">
+            
+                    
+                    5.6.1. 基本行为
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6.2" data-path="../section-5/5.6.2.html">
+            
+                <a href="../section-5/5.6.2.html">
+            
+                    
+                    5.6.2. 可选功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6.3" data-path="../section-5/5.6.3.html">
+            
+                <a href="../section-5/5.6.3.html">
+            
+                    
+                    5.6.3. 偏差
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6.4" data-path="../section-5/5.6.4.html">
+            
+                <a href="../section-5/5.6.4.html">
+            
+                    
+                    5.6.4. 在NETCONF中公布一致性信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6.5" data-path="../section-5/5.6.5.html">
+            
+                <a href="../section-5/5.6.5.html">
+            
+                    
+                    5.6.5. 实现一个模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../section-5/5.7.html">
+            
+                <a href="../section-5/5.7.html">
+            
+                    
+                    5.7. 数据存储修改
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../section-6/">
+            
+                <a href="../section-6/">
+            
+                    
+                    6. YANG语法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../section-6/6.1.html">
+            
+                <a href="../section-6/6.1.html">
+            
+                    
+                    6.1. 词法标记
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1.1" data-path="../section-6/6.1.1.html">
+            
+                <a href="../section-6/6.1.1.html">
+            
+                    
+                    6.1.1. 注释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.2" data-path="../section-6/6.1.2.html">
+            
+                <a href="../section-6/6.1.2.html">
+            
+                    
+                    6.1.2. 令牌
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.3" data-path="../section-6/6.1.3.html">
+            
+                <a href="../section-6/6.1.3.html">
+            
+                    
+                    6.1.3. 引用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../section-6/6.2.html">
+            
+                <a href="../section-6/6.2.html">
+            
+                    
+                    6.2. 身份标识
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.2.1" data-path="../section-6/6.2.1.html">
+            
+                <a href="../section-6/6.2.1.html">
+            
+                    
+                    6.2.1. 标识符及其名称空间
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../section-6/6.3.html">
+            
+                <a href="../section-6/6.3.html">
+            
+                    
+                    6.3. 声明
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.3.1" data-path="../section-6/6.3.1.html">
+            
+                <a href="../section-6/6.3.1.html">
+            
+                    
+                    6.3.1. 语言扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../section-6/6.4.html">
+            
+                <a href="../section-6/6.4.html">
+            
+                    
+                    6.4. XPath评估
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.4.1" data-path="../section-6/6.4.1.html">
+            
+                <a href="../section-6/6.4.1.html">
+            
+                    
+                    6.4.1. XPath上下文
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../section-6/6.5.html">
+            
+                <a href="../section-6/6.5.html">
+            
+                    
+                    6.5. 模式节点标识符
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../section-7/">
+            
+                <a href="../section-7/">
+            
+                    
+                    7. YANG声明
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../section-7/7.1.html">
+            
+                <a href="../section-7/7.1.html">
+            
+                    
+                    7.1. “模块”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../section-7/7.2.html">
+            
+                <a href="../section-7/7.2.html">
+            
+                    
+                    7.2. “子模块”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../section-7/7.3.html">
+            
+                <a href="../section-7/7.3.html">
+            
+                    
+                    7.3. “typedef”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../section-7/7.4.html">
+            
+                <a href="../section-7/7.4.html">
+            
+                    
+                    7.4. “类型”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../section-7/7.5.html">
+            
+                <a href="../section-7/7.5.html">
+            
+                    
+                    7.5. “容器”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../section-7/7.6.html">
+            
+                <a href="../section-7/7.6.html">
+            
+                    
+                    7.6. “叶”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../section-7/7.7.html">
+            
+                <a href="../section-7/7.7.html">
+            
+                    
+                    7.7. “叶列表”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../section-7/7.8.html">
+            
+                <a href="../section-7/7.8.html">
+            
+                    
+                    7.8. “列表”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../section-7/7.9.html">
+            
+                <a href="../section-7/7.9.html">
+            
+                    
+                    7.9. “选择”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="../section-7/7.10.html">
+            
+                <a href="../section-7/7.10.html">
+            
+                    
+                    7.10. “anydata”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11" data-path="../section-7/7.11.html">
+            
+                <a href="../section-7/7.11.html">
+            
+                    
+                    7.11. “anyxml”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.12" data-path="../section-7/7.12.html">
+            
+                <a href="../section-7/7.12.html">
+            
+                    
+                    7.12. "分组"声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.13" data-path="../section-7/7.13.html">
+            
+                <a href="../section-7/7.13.html">
+            
+                    
+                    7.13. “使用”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.14" data-path="../section-7/7.14.html">
+            
+                <a href="../section-7/7.14.html">
+            
+                    
+                    7.14. “rpc”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.15" data-path="../section-7/7.15.html">
+            
+                <a href="../section-7/7.15.html">
+            
+                    
+                    7.15. “动作”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.16" data-path="../section-7/7.16.html">
+            
+                <a href="../section-7/7.16.html">
+            
+                    
+                    7.16. “通知”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.17" data-path="../section-7/7.17.html">
+            
+                <a href="../section-7/7.17.html">
+            
+                    
+                    7.17. “扩充”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.18" data-path="../section-7/7.18.html">
+            
+                <a href="../section-7/7.18.html">
+            
+                    
+                    7.18. “身份”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.19" data-path="../section-7/7.19.html">
+            
+                <a href="../section-7/7.19.html">
+            
+                    
+                    7.19. “扩展”声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.20" data-path="../section-7/7.20.html">
+            
+                <a href="../section-7/7.20.html">
+            
+                    
+                    7.20. 一致性相关的陈述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.21" data-path="../section-7/7.21.html">
+            
+                <a href="../section-7/7.21.html">
+            
+                    
+                    7.21. 通用声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../section-8/">
+            
+                <a href="../section-8/">
+            
+                    
+                    8. 约束
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../section-8/8.1.html">
+            
+                <a href="../section-8/8.1.html">
+            
+                    
+                    8.1. 数据约束
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../section-8/8.2.html">
+            
+                <a href="../section-8/8.2.html">
+            
+                    
+                    8.2. 配置数据修改
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../section-8/8.3.html">
+            
+                <a href="../section-8/8.3.html">
+            
+                    
+                    8.3. NETCONF约束执行模型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.3.1" data-path="../section-8/8.3.1.html">
+            
+                <a href="../section-8/8.3.1.html">
+            
+                    
+                    8.3.1. 有效负载分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3.2" data-path="../section-8/8.3.2.html">
+            
+                <a href="../section-8/8.3.2.html">
+            
+                    
+                    8.3.2. NETCONF <edit-config>处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3.3" data-path="../section-8/8.3.3.html">
+            
+                <a href="../section-8/8.3.3.html">
+            
+                    
+                    8.3.3. Validation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../section-9/">
+            
+                <a href="../section-9/">
+            
+                    
+                    9. 内置类型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../section-9/9.1.html">
+            
+                <a href="../section-9/9.1.html">
+            
+                    
+                    9.1. 规范表示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../section-9/9.2.html">
+            
+                <a href="../section-9/9.2.html">
+            
+                    
+                    9.2. 整数内置类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../section-9/9.3.html">
+            
+                <a href="../section-9/9.3.html">
+            
+                    
+                    9.3. decimal64内置类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../section-9/9.4.html">
+            
+                <a href="../section-9/9.4.html">
+            
+                    
+                    9.4. 字符串内置类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../section-9/9.5.html">
+            
+                <a href="../section-9/9.5.html">
+            
+                    
+                    9.5. 布尔内置类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../section-9/9.6.html">
+            
+                <a href="../section-9/9.6.html">
+            
+                    
+                    9.6. 枚举内置类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="../section-9/9.7.html">
+            
+                <a href="../section-9/9.7.html">
+            
+                    
+                    9.7. 位(bits)内置类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="../section-9/9.8.html">
+            
+                <a href="../section-9/9.8.html">
+            
+                    
+                    9.8. 二进制内置类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="../section-9/9.9.html">
+            
+                <a href="../section-9/9.9.html">
+            
+                    
+                    9.9. leafref内置类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="../section-9/9.10.html">
+            
+                <a href="../section-9/9.10.html">
+            
+                    
+                    9.10. Identityref内置类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" data-path="../section-9/9.11.html">
+            
+                <a href="../section-9/9.11.html">
+            
+                    
+                    9.11. 空的内置类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.12" data-path="../section-9/9.12.html">
+            
+                <a href="../section-9/9.12.html">
+            
+                    
+                    9.12. 联合内置类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.13" data-path="../section-9/9.13.html">
+            
+                <a href="../section-9/9.13.html">
+            
+                    
+                    9.13. 实例标识符内置类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../section-10/">
+            
+                <a href="../section-10/">
+            
+                    
+                    10. XPath函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../section-11/">
+            
+                <a href="../section-11/">
+            
+                    
+                    11. 更新模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../section-12/">
+            
+                <a href="../section-12/">
+            
+                    
+                    12. 与YANG版本1共存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../section-13/">
+            
+                <a href="../section-13/">
+            
+                    
+                    13. YIN
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../section-13/13.1.html">
+            
+                <a href="../section-13/13.1.html">
+            
+                    
+                    13.1. 正式的YIN定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.15" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    14. YANG ABNF语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../section-15/">
+            
+                <a href="../section-15/">
+            
+                    
+                    15. 与YANG相关的错误的NETCONF错误响应
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../section-16/">
+            
+                <a href="../section-16/">
+            
+                    
+                    16. IANA考虑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../section-17/">
+            
+                <a href="../section-17/">
+            
+                    
+                    17. 安全考虑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../section-18/">
+            
+                <a href="../section-18/">
+            
+                    
+                    18. 参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../acknowledgements.html">
+            
+                <a href="../acknowledgements.html">
+            
+                    
+                    致谢
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../contributors.html">
+            
+                <a href="../contributors.html">
+            
+                    
+                    贡献者
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../authors-address.html">
+            
+                <a href="../authors-address.html">
+            
+                    
+                    作者的地址
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >14. YANG ABNF语法</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="14-yang-abnf&#x8BED;&#x6CD5;"><a name="14-yang-abnf&#x8BED;&#x6CD5;" class="plugin-anchor" href="#14-yang-abnf&#x8BED;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>14. <code>YANG</code> <code>ABNF</code>&#x8BED;&#x6CD5;</h1>
+<p>&#x5728;<code>YANG</code>&#x4E2D;&#xFF0C;&#x51E0;&#x4E4E;&#x6240;&#x6709;&#x7684;&#x9648;&#x8FF0;&#x90FD;&#x662F;&#x65E0;&#x5E8F;&#x7684;&#x3002; <code>ABNF</code>&#x8BED;&#x6CD5;[<a href="https://tools.ietf.org/html/rfc5234" target="_blank">RFC5234</a>] [<a href="https://tools.ietf.org/html/rfc7405" target="_blank">RFC7405</a>]&#x5B9A;&#x4E49;&#x4E86;&#x89C4;&#x8303;&#x7684;&#x987A;&#x5E8F;&#x3002; &#x4E3A;&#x4E86;&#x63D0;&#x9AD8;&#x6A21;&#x5757;&#x53EF;&#x8BFB;&#x6027;&#xFF0C;&#x5EFA;&#x8BAE;&#x6309;&#x6B64;&#x987A;&#x5E8F;&#x8F93;&#x5165;&#x6761;&#x6B3E;&#x3002;</p>
+<p>&#x5728;<code>ABNF</code>&#x8BED;&#x6CD5;&#x4E2D;&#xFF0C;&#x65E0;&#x5E8F;&#x7684;&#x8BED;&#x53E5;&#x7528;&#x6CE8;&#x91CA;&#x6807;&#x8BB0;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x8BED;&#x6CD5;&#x5047;&#x5B9A;&#x626B;&#x63CF;&#x5668;&#x7528;&#x4E00;&#x4E2A;&#x7A7A;&#x683C;&#x5B57;&#x7B26;&#x66FF;&#x6362;<code>YANG</code>&#x7684;&#x6CE8;&#x91CA;&#x3002;</p>
+<blockquote>
+<p><code>&lt;CODE BEGINS&gt;</code> file &quot;yang.abnf&quot;</p>
+</blockquote>
+<pre><code class="lang-ABNF">module-stmt         = optsep module-keyword sep identifier-arg-str optsep
+                      &quot;{&quot; stmtsep
+                          module-header-stmts
+                          linkage-stmts
+                          meta-stmts
+                          revision-stmts
+                          body-stmts
+                      &quot;}&quot; optsep
+
+submodule-stmt      = optsep submodule-keyword sep identifier-arg-str optsep
+                      &quot;{&quot; stmtsep
+                          submodule-header-stmts
+                          linkage-stmts
+                          meta-stmts
+                          revision-stmts
+                          body-stmts
+                      &quot;}&quot; optsep
+
+module-header-stmts = ;; these stmts can appear in any order
+                      yang-version-stmt
+                      namespace-stmt
+                      prefix-stmt
+
+submodule-header-stmts =
+                      ;; these stmts can appear in any order
+                      yang-version-stmt
+                      belongs-to-stmt
+meta-stmts          = ;; these stmts can appear in any order
+                    [organization-stmt]
+                    [contact-stmt]
+                    [description-stmt]
+                    [reference-stmt]
+
+linkage-stmts       = ;; these stmts can appear in any order
+                    *import-stmt
+                    *include-stmt
+
+revision-stmts      = *revision-stmt
+
+body-stmts          = *(extension-stmt /
+                      feature-stmt /
+                      identity-stmt /
+                      typedef-stmt /
+                      grouping-stmt /
+                      data-def-stmt /
+                      augment-stmt /
+                      rpc-stmt /
+                      notification-stmt /
+                      deviation-stmt)
+
+data-def-stmt       = container-stmt /
+                    leaf-stmt /
+                    leaf-list-stmt /
+                    list-stmt /
+                    choice-stmt /
+                    anydata-stmt /
+                    anyxml-stmt /
+                    uses-stmt
+
+yang-version-stmt   = yang-version-keyword sep yang-version-arg-str
+                    stmtend
+
+yang-version-arg-str = &lt; a string that matches the rule &gt;
+                     &lt; yang-version-arg &gt;
+
+yang-version-arg    = &quot;1.1&quot;
+
+import-stmt         = import-keyword sep identifier-arg-str optsep
+                    &quot;{&quot; stmtsep
+                        ;; these stmts can appear in any order
+                        prefix-stmt
+                        [revision-date-stmt]
+                        [description-stmt]
+                        [reference-stmt]
+                    &quot;}&quot; stmtsep
+include-stmt        = include-keyword sep identifier-arg-str optsep
+                      (&quot;;&quot; /
+                       &quot;{&quot; stmtsep
+                           ;; these stmts can appear in any order
+                           [revision-date-stmt]
+                           [description-stmt]
+                           [reference-stmt]
+                       &quot;}&quot;) stmtsep
+
+namespace-stmt      = namespace-keyword sep uri-str stmtend
+
+uri-str             = &lt; a string that matches the rule &gt;
+                      &lt; URI in RFC 3986 &gt;
+
+prefix-stmt         = prefix-keyword sep prefix-arg-str stmtend
+
+belongs-to-stmt     = belongs-to-keyword sep identifier-arg-str
+                      optsep
+                      &quot;{&quot; stmtsep
+                          prefix-stmt
+                      &quot;}&quot; stmtsep
+
+organization-stmt   = organization-keyword sep string stmtend
+
+contact-stmt        = contact-keyword sep string stmtend
+
+description-stmt    = description-keyword sep string stmtend
+
+reference-stmt      = reference-keyword sep string stmtend
+
+units-stmt          = units-keyword sep string stmtend
+
+revision-stmt       = revision-keyword sep revision-date optsep
+                      (&quot;;&quot; /
+                       &quot;{&quot; stmtsep
+                           ;; these stmts can appear in any order
+                           [description-stmt]
+                           [reference-stmt]
+                       &quot;}&quot;) stmtsep
+
+revision-date       = date-arg-str
+
+revision-date-stmt  = revision-date-keyword sep revision-date stmtend
+
+extension-stmt      = extension-keyword sep identifier-arg-str optsep
+                      (&quot;;&quot; /
+                       &quot;{&quot; stmtsep
+                           ;; these stmts can appear in any order
+                           [argument-stmt]
+                           [status-stmt]
+                           [description-stmt]
+                           [reference-stmt]
+                       &quot;}&quot;) stmtsep
+
+argument-stmt       = argument-keyword sep identifier-arg-str optsep
+                      (&quot;;&quot; /
+                       &quot;{&quot; stmtsep
+                           [yin-element-stmt]
+                       &quot;}&quot;) stmtsep
+
+yin-element-stmt    = yin-element-keyword sep yin-element-arg-str
+                      stmtend
+
+yin-element-arg-str = &lt; a string that matches the rule &gt;
+                      &lt; yin-element-arg &gt;
+
+yin-element-arg     = true-keyword / false-keyword
+
+identity-stmt       = identity-keyword sep identifier-arg-str optsep
+                      (&quot;;&quot; /
+                       &quot;{&quot; stmtsep
+                           ;; these stmts can appear in any order
+                           *if-feature-stmt
+                           *base-stmt
+                           [status-stmt]
+                           [description-stmt]
+                           [reference-stmt]
+                       &quot;}&quot;) stmtsep
+
+base-stmt           = base-keyword sep identifier-ref-arg-str
+                      stmtend
+
+feature-stmt        = feature-keyword sep identifier-arg-str optsep
+                      (&quot;;&quot; /
+                       &quot;{&quot; stmtsep
+                           ;; these stmts can appear in any order
+                           *if-feature-stmt
+                           [status-stmt]
+                           [description-stmt]
+                           [reference-stmt]
+                       &quot;}&quot;) stmtsep
+if-feature-stmt     = if-feature-keyword sep if-feature-expr-str
+                     stmtend
+
+if-feature-expr-str = &lt; a string that matches the rule &gt;
+                     &lt; if-feature-expr &gt;
+
+if-feature-expr     = if-feature-term
+                       [sep or-keyword sep if-feature-expr]
+
+if-feature-term     = if-feature-factor
+                       [sep and-keyword sep if-feature-term]
+
+if-feature-factor   = not-keyword sep if-feature-factor /
+                     &quot;(&quot; optsep if-feature-expr optsep &quot;)&quot; /
+                     identifier-ref-arg
+
+typedef-stmt        = typedef-keyword sep identifier-arg-str optsep
+                     &quot;{&quot; stmtsep
+                         ;; these stmts can appear in any order
+                         type-stmt
+                         [units-stmt]
+                         [default-stmt]
+                         [status-stmt]
+                         [description-stmt]
+                         [reference-stmt]
+                      &quot;}&quot; stmtsep
+
+type-stmt           = type-keyword sep identifier-ref-arg-str optsep
+                     (&quot;;&quot; /
+                      &quot;{&quot; stmtsep
+                          [type-body-stmts]
+                      &quot;}&quot;) stmtsep
+
+type-body-stmts     = numerical-restrictions /
+                     decimal64-specification /
+                     string-restrictions /
+                     enum-specification /
+                     leafref-specification /
+                     identityref-specification /
+                     instance-identifier-specification /
+                     bits-specification /
+                     union-specification /
+                     binary-specification
+                     numerical-restrictions = [range-stmt]
+
+range-stmt          = range-keyword sep range-arg-str optsep
+                   (&quot;;&quot; /
+                    &quot;{&quot; stmtsep
+                        ;; these stmts can appear in any order
+                        [error-message-stmt]
+                        [error-app-tag-stmt]
+                        [description-stmt]
+                        [reference-stmt]
+                     &quot;}&quot;) stmtsep
+
+decimal64-specification = ;; these stmts can appear in any order
+                       fraction-digits-stmt
+                       [range-stmt]
+
+fraction-digits-stmt = fraction-digits-keyword sep
+                    fraction-digits-arg-str stmtend
+
+fraction-digits-arg-str = &lt; a string that matches the rule &gt;
+                       &lt; fraction-digits-arg &gt;
+
+fraction-digits-arg = (&quot;1&quot; [&quot;0&quot; / &quot;1&quot; / &quot;2&quot; / &quot;3&quot; / &quot;4&quot; /
+                         &quot;5&quot; / &quot;6&quot; / &quot;7&quot; / &quot;8&quot;])
+                   / &quot;2&quot; / &quot;3&quot; / &quot;4&quot; / &quot;5&quot; / &quot;6&quot; / &quot;7&quot; / &quot;8&quot; / &quot;9&quot;
+
+string-restrictions = ;; these stmts can appear in any order
+                   [length-stmt]
+                   *pattern-stmt
+
+length-stmt         = length-keyword sep length-arg-str optsep
+                   (&quot;;&quot; /
+                    &quot;{&quot; stmtsep
+                        ;; these stmts can appear in any order
+                        [error-message-stmt]
+                        [error-app-tag-stmt]
+                        [description-stmt]
+                        [reference-stmt]
+                     &quot;}&quot;) stmtsep
+
+pattern-stmt        = pattern-keyword sep string optsep
+                   (&quot;;&quot; /
+                    &quot;{&quot; stmtsep
+                        ;; these stmts can appear in any order
+                        [modifier-stmt]
+                        [error-message-stmt]
+                        [error-app-tag-stmt]
+                        [description-stmt]
+                        [reference-stmt]
+                     &quot;}&quot;) stmtsep
+
+modifier-stmt       = modifier-keyword sep modifier-arg-str stmtend
+
+modifier-arg-str    = &lt; a string that matches the rule &gt;
+                   &lt; modifier-arg &gt;
+
+modifier-arg        = invert-match-keyword
+
+default-stmt        = default-keyword sep string stmtend
+
+enum-specification  = 1*enum-stmt
+
+enum-stmt           = enum-keyword sep string optsep
+                   (&quot;;&quot; /
+                    &quot;{&quot; stmtsep
+                        ;; these stmts can appear in any order
+                        *if-feature-stmt
+                        [value-stmt]
+                        [status-stmt]
+                        [description-stmt]
+                        [reference-stmt]
+                     &quot;}&quot;) stmtsep
+
+leafref-specification =
+                   ;; these stmts can appear in any order
+                   path-stmt
+                   [require-instance-stmt]
+
+path-stmt           = path-keyword sep path-arg-str stmtend
+
+require-instance-stmt = require-instance-keyword sep
+                      require-instance-arg-str stmtend
+
+require-instance-arg-str = &lt; a string that matches the rule &gt;
+                        &lt; require-instance-arg &gt;
+
+require-instance-arg = true-keyword / false-keyword
+
+instance-identifier-specification =
+                      [require-instance-stmt]
+
+identityref-specification =
+                      1*base-stmt
+
+union-specification = 1*type-stmt
+
+binary-specification = [length-stmt]
+
+bits-specification  = 1*bit-stmt
+
+bit-stmt            = bit-keyword sep identifier-arg-str optsep
+                      (&quot;;&quot; /
+                       &quot;{&quot; stmtsep
+                           ;; these stmts can appear in any order
+                           *if-feature-stmt
+                           [position-stmt]
+                           [status-stmt]
+                           [description-stmt]
+                           [reference-stmt]
+                       &quot;}&quot;) stmtsep
+
+position-stmt       = position-keyword sep
+                      position-value-arg-str stmtend
+
+position-value-arg-str = &lt; a string that matches the rule &gt;
+                         &lt; position-value-arg &gt;
+
+position-value-arg  = non-negative-integer-value
+
+status-stmt         = status-keyword sep status-arg-str stmtend
+
+status-arg-str      = &lt; a string that matches the rule &gt;
+                      &lt; status-arg &gt;
+
+status-arg          = current-keyword /
+                      obsolete-keyword /
+                      deprecated-keyword
+
+config-stmt         = config-keyword sep
+                      config-arg-str stmtend
+
+config-arg-str      = &lt; a string that matches the rule &gt;
+                      &lt; config-arg &gt;
+
+config-arg          = true-keyword / false-keyword
+
+mandatory-stmt      = mandatory-keyword sep
+                      mandatory-arg-str stmtend
+
+mandatory-arg-str   = &lt; a string that matches the rule &gt;
+                      &lt; mandatory-arg &gt;
+
+mandatory-arg       = true-keyword / false-keyword
+
+presence-stmt       = presence-keyword sep string stmtend
+
+ordered-by-stmt     = ordered-by-keyword sep
+                      ordered-by-arg-str stmtend
+
+ordered-by-arg-str  = &lt; a string that matches the rule &gt;
+                      &lt; ordered-by-arg &gt;
+
+ordered-by-arg      = user-keyword / system-keyword
+
+must-stmt           = must-keyword sep string optsep
+                      (&quot;;&quot; /
+                       &quot;{&quot; stmtsep
+                           ;; these stmts can appear in any order
+                           [error-message-stmt]
+                           [error-app-tag-stmt]
+                           [description-stmt]
+                           [reference-stmt]
+                        &quot;}&quot;) stmtsep
+
+error-message-stmt  = error-message-keyword sep string stmtend
+
+error-app-tag-stmt  = error-app-tag-keyword sep string stmtend
+
+min-elements-stmt   = min-elements-keyword sep
+                      min-value-arg-str stmtend
+
+min-value-arg-str   = &lt; a string that matches the rule &gt;
+                      &lt; min-value-arg &gt;
+
+min-value-arg       = non-negative-integer-value
+
+max-elements-stmt   = max-elements-keyword sep
+                      max-value-arg-str stmtend
+
+max-value-arg-str   = &lt; a string that matches the rule &gt;
+                      &lt; max-value-arg &gt;
+
+max-value-arg       = unbounded-keyword /
+                      positive-integer-value
+
+value-stmt          = value-keyword sep integer-value-str stmtend
+
+integer-value-str   = &lt; a string that matches the rule &gt;
+                    &lt; integer-value &gt;
+
+grouping-stmt       = grouping-keyword sep identifier-arg-str optsep
+                    (&quot;;&quot; /
+                     &quot;{&quot; stmtsep
+                         ;; these stmts can appear in any order
+                         [status-stmt]
+                         [description-stmt]
+                         [reference-stmt]
+                         *(typedef-stmt / grouping-stmt)
+                         *data-def-stmt
+                         *action-stmt
+                         *notification-stmt
+                     &quot;}&quot;) stmtsep
+
+container-stmt      = container-keyword sep identifier-arg-str optsep
+                    (&quot;;&quot; /
+                     &quot;{&quot; stmtsep
+                         ;; these stmts can appear in any order
+                         [when-stmt]
+                         *if-feature-stmt
+                         *must-stmt
+                         [presence-stmt]
+                         [config-stmt]
+                         [status-stmt]
+                         [description-stmt]
+                         [reference-stmt]
+                         *(typedef-stmt / grouping-stmt)
+                         *data-def-stmt
+                         *action-stmt
+                         *notification-stmt
+                     &quot;}&quot;) stmtsep
+
+leaf-stmt           = leaf-keyword sep identifier-arg-str optsep
+                   &quot;{&quot; stmtsep
+                       ;; these stmts can appear in any order
+                       [when-stmt]
+                       *if-feature-stmt
+                       type-stmt
+                       [units-stmt]
+                       *must-stmt
+                       [default-stmt]
+                       [config-stmt]
+                       [mandatory-stmt]
+                       [status-stmt]
+                       [description-stmt]
+                       [reference-stmt]
+                    &quot;}&quot; stmtsep
+
+leaf-list-stmt      = leaf-list-keyword sep identifier-arg-str optsep
+                   &quot;{&quot; stmtsep
+                       ;; these stmts can appear in any order
+                       [when-stmt]
+                       *if-feature-stmt
+                       type-stmt stmtsep
+                       [units-stmt]
+                       *must-stmt
+                       *default-stmt
+                       [config-stmt]
+                       [min-elements-stmt]
+                       [max-elements-stmt]
+                       [ordered-by-stmt]
+                       [status-stmt]
+                       [description-stmt]
+                       [reference-stmt]
+                    &quot;}&quot; stmtsep
+
+list-stmt           = list-keyword sep identifier-arg-str optsep
+                      &quot;{&quot; stmtsep
+                          ;; these stmts can appear in any order
+                          [when-stmt]
+                          *if-feature-stmt
+                          *must-stmt
+                          [key-stmt]
+                          *unique-stmt
+                          [config-stmt]
+                          [min-elements-stmt]
+                          [max-elements-stmt]
+                          [ordered-by-stmt]
+                          [status-stmt]
+                          [description-stmt]
+                          [reference-stmt]
+                          *(typedef-stmt / grouping-stmt)
+                          1*data-def-stmt
+                          *action-stmt
+                          *notification-stmt
+                       &quot;}&quot; stmtsep
+
+key-stmt            = key-keyword sep key-arg-str stmtend
+
+key-arg-str         = &lt; a string that matches the rule &gt;
+                      &lt; key-arg &gt;
+
+key-arg             = node-identifier *(sep node-identifier)
+
+unique-stmt         = unique-keyword sep unique-arg-str stmtend
+
+unique-arg-str      = &lt; a string that matches the rule &gt;
+                      &lt; unique-arg &gt;
+
+unique-arg          = descendant-schema-nodeid
+                      *(sep descendant-schema-nodeid)
+choice-stmt         = choice-keyword sep identifier-arg-str optsep
+                    (&quot;;&quot; /
+                     &quot;{&quot; stmtsep
+                         ;; these stmts can appear in any order
+                         [when-stmt]
+                         *if-feature-stmt
+                         [default-stmt]
+                         [config-stmt]
+                         [mandatory-stmt]
+                         [status-stmt]
+                         [description-stmt]
+                         [reference-stmt]
+                         *(short-case-stmt / case-stmt)
+                     &quot;}&quot;) stmtsep
+
+short-case-stmt     = choice-stmt /
+                    container-stmt /
+                    leaf-stmt /
+                    leaf-list-stmt /
+                    list-stmt /
+                    anydata-stmt /
+                    anyxml-stmt
+
+case-stmt           = case-keyword sep identifier-arg-str optsep
+                    (&quot;;&quot; /
+                     &quot;{&quot; stmtsep
+                         ;; these stmts can appear in any order
+                         [when-stmt]
+                         *if-feature-stmt
+                         [status-stmt]
+                         [description-stmt]
+                         [reference-stmt]
+                         *data-def-stmt
+                     &quot;}&quot;) stmtsep
+
+anydata-stmt        = anydata-keyword sep identifier-arg-str optsep
+                   (&quot;;&quot; /
+                    &quot;{&quot; stmtsep
+                        ;; these stmts can appear in any order
+                        [when-stmt]
+                        *if-feature-stmt
+                        *must-stmt
+                        [config-stmt]
+                        [mandatory-stmt]
+                        [status-stmt]
+                        [description-stmt]
+                        [reference-stmt]
+                     &quot;}&quot;) stmtsep
+
+anyxml-stmt         = anyxml-keyword sep identifier-arg-str optsep
+                   (&quot;;&quot; /
+                    &quot;{&quot; stmtsep
+                        ;; these stmts can appear in any order
+                        [when-stmt]
+                        *if-feature-stmt
+                        *must-stmt
+                        [config-stmt]
+                        [mandatory-stmt]
+                        [status-stmt]
+                        [description-stmt]
+                        [reference-stmt]
+                     &quot;}&quot;) stmtsep
+
+uses-stmt           = uses-keyword sep identifier-ref-arg-str optsep
+                   (&quot;;&quot; /
+                    &quot;{&quot; stmtsep
+                        ;; these stmts can appear in any order
+                        [when-stmt]
+                        *if-feature-stmt
+                        [status-stmt]
+                        [description-stmt]
+                        [reference-stmt]
+                        *refine-stmt
+                        *uses-augment-stmt
+                    &quot;}&quot;) stmtsep
+
+refine-stmt         = refine-keyword sep refine-arg-str optsep
+                       &quot;{&quot; stmtsep
+                           ;; these stmts can appear in any order
+                           *if-feature-stmt
+                           *must-stmt
+                           [presence-stmt]
+                           *default-stmt
+                           [config-stmt]
+                           [mandatory-stmt]
+                           [min-elements-stmt]
+                           [max-elements-stmt]
+                           [description-stmt]
+                           [reference-stmt]
+                         &quot;}&quot; stmtsep
+
+refine-arg-str      = &lt; a string that matches the rule &gt;
+                      &lt; refine-arg &gt;
+
+refine-arg          = descendant-schema-nodeid
+
+uses-augment-stmt   = augment-keyword sep uses-augment-arg-str optsep
+                      &quot;{&quot; stmtsep
+                          ;; these stmts can appear in any order
+                          [when-stmt]
+                          *if-feature-stmt
+                          [status-stmt]
+                          [description-stmt]
+                          [reference-stmt]
+                          1*(data-def-stmt / case-stmt /
+                             action-stmt / notification-stmt)
+                       &quot;}&quot; stmtsep
+
+uses-augment-arg-str = &lt; a string that matches the rule &gt;
+                       &lt; uses-augment-arg &gt;
+
+uses-augment-arg    = descendant-schema-nodeid
+
+augment-stmt        = augment-keyword sep augment-arg-str optsep
+                      &quot;{&quot; stmtsep
+                          ;; these stmts can appear in any order
+                          [when-stmt]
+                          *if-feature-stmt
+                          [status-stmt]
+                          [description-stmt]
+                          [reference-stmt]
+                          1*(data-def-stmt / case-stmt /
+                             action-stmt / notification-stmt)
+                       &quot;}&quot; stmtsep
+
+augment-arg-str     = &lt; a string that matches the rule &gt;
+                      &lt; augment-arg &gt;
+
+augment-arg         = absolute-schema-nodeid
+
+when-stmt           = when-keyword sep string optsep
+                      (&quot;;&quot; /
+                       &quot;{&quot; stmtsep
+                           ;; these stmts can appear in any order
+                           [description-stmt]
+                           [reference-stmt]
+                        &quot;}&quot;) stmtsep
+
+rpc-stmt            = rpc-keyword sep identifier-arg-str optsep
+                      (&quot;;&quot; /
+                       &quot;{&quot; stmtsep
+                           ;; these stmts can appear in any order
+                           *if-feature-stmt
+                           [status-stmt]
+                           [description-stmt]
+                           [reference-stmt]
+                           *(typedef-stmt / grouping-stmt)
+                           [input-stmt]
+                           [output-stmt]
+                       &quot;}&quot;) stmtsep
+
+action-stmt         = action-keyword sep identifier-arg-str optsep
+                     (&quot;;&quot; /
+                      &quot;{&quot; stmtsep
+                          ;; these stmts can appear in any order
+                          *if-feature-stmt
+                          [status-stmt]
+                          [description-stmt]
+                          [reference-stmt]
+                          *(typedef-stmt / grouping-stmt)
+                          [input-stmt]
+                          [output-stmt]
+                      &quot;}&quot;) stmtsep
+
+input-stmt          = input-keyword optsep
+                     &quot;{&quot; stmtsep
+                         ;; these stmts can appear in any order
+                         *must-stmt
+                         *(typedef-stmt / grouping-stmt)
+                         1*data-def-stmt
+                     &quot;}&quot; stmtsep
+
+output-stmt         = output-keyword optsep
+                     &quot;{&quot; stmtsep
+                         ;; these stmts can appear in any order
+                         *must-stmt
+                         *(typedef-stmt / grouping-stmt)
+                         1*data-def-stmt
+                     &quot;}&quot; stmtsep
+
+notification-stmt   = notification-keyword sep
+                     identifier-arg-str optsep
+                     (&quot;;&quot; /
+                      &quot;{&quot; stmtsep
+                          ;; these stmts can appear in any order
+                          *if-feature-stmt
+                          *must-stmt
+                          [status-stmt]
+                          [description-stmt]
+                          [reference-stmt]
+                          *(typedef-stmt / grouping-stmt)
+                          *data-def-stmt
+                      &quot;}&quot;) stmtsep
+
+deviation-stmt      = deviation-keyword sep
+                    deviation-arg-str optsep
+                    &quot;{&quot; stmtsep
+                        ;; these stmts can appear in any order
+                        [description-stmt]
+                        [reference-stmt]
+                        (deviate-not-supported-stmt /
+                          1*(deviate-add-stmt /
+                             deviate-replace-stmt /
+                             deviate-delete-stmt))
+                    &quot;}&quot; stmtsep
+
+deviation-arg-str   = &lt; a string that matches the rule &gt;
+                    &lt; deviation-arg &gt;
+
+deviation-arg       = absolute-schema-nodeid
+
+deviate-not-supported-stmt =
+                    deviate-keyword sep
+                    not-supported-keyword-str stmtend
+
+deviate-add-stmt    = deviate-keyword sep add-keyword-str optsep
+                    (&quot;;&quot; /
+                     &quot;{&quot; stmtsep
+                         ;; these stmts can appear in any order
+                         [units-stmt]
+                         *must-stmt
+                         *unique-stmt
+                         *default-stmt
+                         [config-stmt]
+                         [mandatory-stmt]
+                         [min-elements-stmt]
+                         [max-elements-stmt]
+                     &quot;}&quot;) stmtsep
+
+deviate-delete-stmt = deviate-keyword sep delete-keyword-str optsep
+                    (&quot;;&quot; /
+                     &quot;{&quot; stmtsep
+                         ;; these stmts can appear in any order
+                         [units-stmt]
+                         *must-stmt
+                         *unique-stmt
+                         *default-stmt
+                     &quot;}&quot;) stmtsep
+
+deviate-replace-stmt = deviate-keyword sep replace-keyword-str optsep
+                   (&quot;;&quot; /
+                    &quot;{&quot; stmtsep
+                        ;; these stmts can appear in any order
+                        [type-stmt]
+                        [units-stmt]
+                        [default-stmt]
+                        [config-stmt]
+                        [mandatory-stmt]
+                        [min-elements-stmt]
+                        [max-elements-stmt]
+                    &quot;}&quot;) stmtsep
+
+not-supported-keyword-str = &lt; a string that matches the rule &gt;
+                         &lt; not-supported-keyword &gt;
+
+add-keyword-str     = &lt; a string that matches the rule &gt;
+                   &lt; add-keyword &gt;
+
+delete-keyword-str  = &lt; a string that matches the rule &gt;
+                   &lt; delete-keyword &gt;
+
+replace-keyword-str = &lt; a string that matches the rule &gt;
+                   &lt; replace-keyword &gt;
+
+;; represents the usage of an extension
+unknown-statement   = prefix &quot;:&quot; identifier [sep string] optsep
+                   (&quot;;&quot; /
+                    &quot;{&quot; optsep
+                        *((yang-stmt / unknown-statement) optsep)
+                     &quot;}&quot;) stmtsep
+
+yang-stmt           = action-stmt /
+                   anydata-stmt /
+                   anyxml-stmt /
+                   argument-stmt /
+                   augment-stmt /
+                   base-stmt /
+                   belongs-to-stmt /
+                   bit-stmt /
+                   case-stmt /
+                   choice-stmt /
+                   config-stmt /
+                   contact-stmt /
+                   container-stmt /
+                   default-stmt /
+                   description-stmt /
+                   deviate-add-stmt /
+
+                   deviate-delete-stmt /
+                   deviate-not-supported-stmt /
+                   deviate-replace-stmt /
+                   deviation-stmt /
+                   enum-stmt /
+                   error-app-tag-stmt /
+                   error-message-stmt /
+                   extension-stmt /
+                   feature-stmt /
+                   fraction-digits-stmt /
+                   grouping-stmt /
+                   identity-stmt /
+                   if-feature-stmt /
+                   import-stmt /
+                   include-stmt /
+                   input-stmt /
+                   key-stmt /
+                   leaf-list-stmt /
+                   leaf-stmt /
+                   length-stmt /
+                   list-stmt /
+                   mandatory-stmt /
+                   max-elements-stmt /
+                   min-elements-stmt /
+                   modifier-stmt /
+                   module-stmt /
+                   must-stmt /
+                   namespace-stmt /
+                   notification-stmt /
+                   ordered-by-stmt /
+                   organization-stmt /
+                   output-stmt /
+                   path-stmt /
+                   pattern-stmt /
+                   position-stmt /
+                   prefix-stmt /
+                   presence-stmt /
+                   range-stmt /
+                   reference-stmt /
+                   refine-stmt /
+                   require-instance-stmt /
+                   revision-date-stmt /
+                   revision-stmt /
+                   rpc-stmt /
+                   status-stmt /
+                   submodule-stmt /
+                   typedef-stmt /
+                   type-stmt /
+                   unique-stmt /
+                   units-stmt /
+                   uses-augment-stmt /
+                   uses-stmt /
+                   value-stmt /
+                   when-stmt /
+                   yang-version-stmt /
+                   yin-element-stmt
+
+;; Ranges
+
+range-arg-str       = &lt; a string that matches the rule &gt;
+                   &lt; range-arg &gt;
+
+range-arg           = range-part *(optsep &quot;|&quot; optsep range-part)
+
+range-part          = range-boundary
+                   [optsep &quot;..&quot; optsep range-boundary]
+
+range-boundary      = min-keyword / max-keyword /
+                   integer-value / decimal-value
+
+;; Lengths
+
+length-arg-str      = &lt; a string that matches the rule &gt;
+                   &lt; length-arg &gt;
+
+length-arg          = length-part *(optsep &quot;|&quot; optsep length-part)
+
+length-part         = length-boundary
+                   [optsep &quot;..&quot; optsep length-boundary]
+
+length-boundary     = min-keyword / max-keyword /
+                   non-negative-integer-value
+
+;; Date
+
+date-arg-str        = &lt; a string that matches the rule &gt;
+                   &lt; date-arg &gt;
+
+date-arg            = 4DIGIT &quot;-&quot; 2DIGIT &quot;-&quot; 2DIGIT
+
+;; Schema Node Identifiers
+
+schema-nodeid       = absolute-schema-nodeid /
+                   descendant-schema-nodeid
+
+absolute-schema-nodeid = 1*(&quot;/&quot; node-identifier)
+
+descendant-schema-nodeid =
+                      node-identifier
+                      [absolute-schema-nodeid]
+
+node-identifier     = [prefix &quot;:&quot;] identifier
+
+;; Instance Identifiers
+
+instance-identifier = 1*(&quot;/&quot; (node-identifier
+                              [1*key-predicate /
+                               leaf-list-predicate /
+                               pos]))
+
+key-predicate       = &quot;[&quot; *WSP key-predicate-expr *WSP &quot;]&quot;
+
+key-predicate-expr  = node-identifier *WSP &quot;=&quot; *WSP quoted-string
+
+leaf-list-predicate = &quot;[&quot; *WSP leaf-list-predicate-expr *WSP &quot;]&quot;
+
+leaf-list-predicate-expr = &quot;.&quot; *WSP &quot;=&quot; *WSP quoted-string
+
+pos                 = &quot;[&quot; *WSP positive-integer-value *WSP &quot;]&quot;
+
+quoted-string       = (DQUOTE string DQUOTE) / (SQUOTE string SQUOTE)
+
+;; leafref path
+
+path-arg-str        = &lt; a string that matches the rule &gt;
+                      &lt; path-arg &gt;
+
+path-arg            = absolute-path / relative-path
+
+absolute-path       = 1*(&quot;/&quot; (node-identifier *path-predicate))
+
+relative-path       = 1*(&quot;../&quot;) descendant-path
+
+descendant-path     = node-identifier
+                      [*path-predicate absolute-path]
+
+path-predicate      = &quot;[&quot; *WSP path-equality-expr *WSP &quot;]&quot;
+
+path-equality-expr  = node-identifier *WSP &quot;=&quot; *WSP path-key-expr
+
+path-key-expr       = current-function-invocation *WSP &quot;/&quot; *WSP
+rel-path-keyexpr
+
+rel-path-keyexpr    = 1*(&quot;..&quot; *WSP &quot;/&quot; *WSP)
+                    *(node-identifier *WSP &quot;/&quot; *WSP)
+                    node-identifier
+
+;;; Keywords, using the syntax for case-sensitive strings (RFC 7405)
+
+;; statement keywords
+action-keyword           = %s&quot;action&quot;
+anydata-keyword          = %s&quot;anydata&quot;
+anyxml-keyword           = %s&quot;anyxml&quot;
+argument-keyword         = %s&quot;argument&quot;
+augment-keyword          = %s&quot;augment&quot;
+base-keyword             = %s&quot;base&quot;
+belongs-to-keyword       = %s&quot;belongs-to&quot;
+bit-keyword              = %s&quot;bit&quot;
+case-keyword             = %s&quot;case&quot;
+choice-keyword           = %s&quot;choice&quot;
+config-keyword           = %s&quot;config&quot;
+contact-keyword          = %s&quot;contact&quot;
+container-keyword        = %s&quot;container&quot;
+default-keyword          = %s&quot;default&quot;
+description-keyword      = %s&quot;description&quot;
+deviate-keyword          = %s&quot;deviate&quot;
+deviation-keyword        = %s&quot;deviation&quot;
+enum-keyword             = %s&quot;enum&quot;
+error-app-tag-keyword    = %s&quot;error-app-tag&quot;
+error-message-keyword    = %s&quot;error-message&quot;
+extension-keyword        = %s&quot;extension&quot;
+feature-keyword          = %s&quot;feature&quot;
+fraction-digits-keyword  = %s&quot;fraction-digits&quot;
+grouping-keyword         = %s&quot;grouping&quot;
+identity-keyword         = %s&quot;identity&quot;
+if-feature-keyword       = %s&quot;if-feature&quot;
+import-keyword           = %s&quot;import&quot;
+include-keyword          = %s&quot;include&quot;
+input-keyword            = %s&quot;input&quot;
+key-keyword              = %s&quot;key&quot;
+leaf-keyword             = %s&quot;leaf&quot;
+leaf-list-keyword        = %s&quot;leaf-list&quot;
+length-keyword           = %s&quot;length&quot;
+list-keyword             = %s&quot;list&quot;
+mandatory-keyword        = %s&quot;mandatory&quot;
+max-elements-keyword     = %s&quot;max-elements&quot;
+min-elements-keyword     = %s&quot;min-elements&quot;
+modifier-keyword         = %s&quot;modifier&quot;
+module-keyword           = %s&quot;module&quot;
+must-keyword             = %s&quot;must&quot;
+namespace-keyword        = %s&quot;namespace&quot;
+
+notification-keyword     = %s&quot;notification&quot;
+ordered-by-keyword       = %s&quot;ordered-by&quot;
+organization-keyword     = %s&quot;organization&quot;
+output-keyword           = %s&quot;output&quot;
+path-keyword             = %s&quot;path&quot;
+pattern-keyword          = %s&quot;pattern&quot;
+position-keyword         = %s&quot;position&quot;
+prefix-keyword           = %s&quot;prefix&quot;
+presence-keyword         = %s&quot;presence&quot;
+range-keyword            = %s&quot;range&quot;
+reference-keyword        = %s&quot;reference&quot;
+refine-keyword           = %s&quot;refine&quot;
+require-instance-keyword = %s&quot;require-instance&quot;
+revision-keyword         = %s&quot;revision&quot;
+revision-date-keyword    = %s&quot;revision-date&quot;
+rpc-keyword              = %s&quot;rpc&quot;
+status-keyword           = %s&quot;status&quot;
+submodule-keyword        = %s&quot;submodule&quot;
+type-keyword             = %s&quot;type&quot;
+typedef-keyword          = %s&quot;typedef&quot;
+unique-keyword           = %s&quot;unique&quot;
+units-keyword            = %s&quot;units&quot;
+uses-keyword             = %s&quot;uses&quot;
+value-keyword            = %s&quot;value&quot;
+when-keyword             = %s&quot;when&quot;
+yang-version-keyword     = %s&quot;yang-version&quot;
+yin-element-keyword      = %s&quot;yin-element&quot;
+
+;; other keywords
+
+add-keyword              = %s&quot;add&quot;
+current-keyword          = %s&quot;current&quot;
+delete-keyword           = %s&quot;delete&quot;
+deprecated-keyword       = %s&quot;deprecated&quot;
+false-keyword            = %s&quot;false&quot;
+invert-match-keyword     = %s&quot;invert-match&quot;
+max-keyword              = %s&quot;max&quot;
+min-keyword              = %s&quot;min&quot;
+not-supported-keyword    = %s&quot;not-supported&quot;
+obsolete-keyword         = %s&quot;obsolete&quot;
+replace-keyword          = %s&quot;replace&quot;
+system-keyword           = %s&quot;system&quot;
+true-keyword             = %s&quot;true&quot;
+unbounded-keyword        = %s&quot;unbounded&quot;
+user-keyword             = %s&quot;user&quot;
+
+and-keyword              = %s&quot;and&quot;
+or-keyword               = %s&quot;or&quot;
+not-keyword              = %s&quot;not&quot;
+
+current-function-invocation = current-keyword *WSP &quot;(&quot; *WSP &quot;)&quot;
+
+;;; Basic Rules
+
+prefix-arg-str      = &lt; a string that matches the rule &gt;
+                      &lt; prefix-arg &gt;
+
+prefix-arg          = prefix
+
+prefix              = identifier
+
+identifier-arg-str  = &lt; a string that matches the rule &gt;
+                      &lt; identifier-arg &gt;
+
+identifier-arg      = identifier
+
+identifier          = (ALPHA / &quot;_&quot;)
+                      *(ALPHA / DIGIT / &quot;_&quot; / &quot;-&quot; / &quot;.&quot;)
+
+identifier-ref-arg-str = &lt; a string that matches the rule &gt;
+                         &lt; identifier-ref-arg &gt;
+
+identifier-ref-arg  = identifier-ref
+
+identifier-ref      = [prefix &quot;:&quot;] identifier
+
+string              = &lt; an unquoted string, as returned by &gt;
+                      &lt; the scanner, that matches the rule &gt;
+                      &lt; yang-string &gt;
+
+yang-string         = *yang-char
+
+;; any Unicode or ISO/IEC 10646 character, including tab, carriage
+;; return, and line feed but excluding the other C0 control
+;; characters, the surrogate blocks, and the noncharacters
+yang-char = %x09 / %x0A / %x0D / %x20-D7FF /
+                            ; exclude surrogate blocks %xD800-DFFF
+           %xE000-FDCF /    ; exclude noncharacters %xFDD0-FDEF
+           %xFDF0-FFFD /    ; exclude noncharacters %xFFFE-FFFF
+           %x10000-1FFFD /  ; exclude noncharacters %x1FFFE-1FFFF
+           %x20000-2FFFD /  ; exclude noncharacters %x2FFFE-2FFFF
+           %x30000-3FFFD /  ; exclude noncharacters %x3FFFE-3FFFF
+           %x40000-4FFFD /  ; exclude noncharacters %x4FFFE-4FFFF
+           %x50000-5FFFD /  ; exclude noncharacters %x5FFFE-5FFFF
+           %x60000-6FFFD /  ; exclude noncharacters %x6FFFE-6FFFF
+           %x70000-7FFFD /  ; exclude noncharacters %x7FFFE-7FFFF
+           %x80000-8FFFD /  ; exclude noncharacters %x8FFFE-8FFFF
+           %x90000-9FFFD /  ; exclude noncharacters %x9FFFE-9FFFF
+           %xA0000-AFFFD /  ; exclude noncharacters %xAFFFE-AFFFF
+           %xB0000-BFFFD /  ; exclude noncharacters %xBFFFE-BFFFF
+           %xC0000-CFFFD /  ; exclude noncharacters %xCFFFE-CFFFF
+           %xD0000-DFFFD /  ; exclude noncharacters %xDFFFE-DFFFF
+           %xE0000-EFFFD /  ; exclude noncharacters %xEFFFE-EFFFF
+           %xF0000-FFFFD /  ; exclude noncharacters %xFFFFE-FFFFF
+           %x100000-10FFFD  ; exclude noncharacters %x10FFFE-10FFFF
+
+integer-value       = (&quot;-&quot; non-negative-integer-value) /
+                       non-negative-integer-value
+
+non-negative-integer-value = &quot;0&quot; / positive-integer-value
+
+positive-integer-value = (non-zero-digit *DIGIT)
+
+zero-integer-value  = 1*DIGIT
+
+stmtend             = optsep (&quot;;&quot; / &quot;{&quot; stmtsep &quot;}&quot;) stmtsep
+
+sep                 = 1*(WSP / line-break)
+                      ; unconditional separator
+
+optsep              = *(WSP / line-break)
+
+stmtsep             = *(WSP / line-break / unknown-statement)
+
+line-break          = CRLF / LF
+
+non-zero-digit      = %x31-39
+
+decimal-value       = integer-value (&quot;.&quot; zero-integer-value)
+
+SQUOTE              = %x27
+                      ; single quote
+
+;;; core rules from RFC 5234
+
+ALPHA               = %x41-5A / %x61-7A
+                      ; A-Z / a-z
+
+CR                  = %x0D
+                      ; carriage return
+
+CRLF                = CR LF
+                      ; Internet standard newline
+
+DIGIT               = %x30-39
+                      ; 0-9
+
+DQUOTE              = %x22
+                      ; double quote
+
+HTAB                = %x09
+                      ; horizontal tab
+
+LF                  = %x0A
+                      ; line feed
+
+SP                  = %x20
+                      ; space
+
+WSP                 = SP / HTAB
+                      ; whitespace
+</code></pre>
+<blockquote>
+<p><code>&lt;CODE ENDS&gt;</code></p>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../section-13/13.1.html" class="navigation navigation-prev " aria-label="Previous page: 13.1. 正式的YIN定义">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../section-15/" class="navigation navigation-next " aria-label="Next page: 15. 与YANG相关的错误的NETCONF错误响应">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"14. YANG ABNF语法","level":"1.15","depth":1,"next":{"title":"15. 与YANG相关的错误的NETCONF错误响应","level":"1.16","depth":1,"path":"section-15/README.md","ref":"section-15/README.md","articles":[]},"previous":{"title":"13.1. 正式的YIN定义","level":"1.14.1","depth":2,"path":"section-13/13.1.md","ref":"section-13/13.1.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","ga","github","splitter","github-buttons"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/tonydeng/rfc7950-zh"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-buttons":{"repo":"tonydeng/rfc7950-zh","types":["star","watch","fork"],"size":"small"},"ga":{"configuration":"auto","token":"UA-80673215-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"YANG 1.1 数据建模语言","language":"zh","gitbook":"*","description":"YANG 1.1 数据建模语言 - RFC7950 中文翻译"},"file":{"path":"section-14/README.md","mtime":"2018-02-01T08:46:27.656Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-02-01T08:46:45.607Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
