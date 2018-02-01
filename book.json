@@ -1,8 +1,11 @@
 {
-    "plugins" : [ "anchors", "ga" ],
+    "plugins" : [ "anchors", "ga", "sitemap" ],
     "pluginsConfig": {
         "ga": {
             "token": "UA-80673215-1"
+        },
+        "sitemap": {
+            "hostname": "https://tonydeng.github.io/rfc7950-zh/"
         }
     }
 }
