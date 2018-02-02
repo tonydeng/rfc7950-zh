@@ -2,6 +2,8 @@
 
 > [RFC7950 (The YANG 1.1 Data Modeling Language)](https://tools.ietf.org/html/rfc7950) 中文翻译版本
 
+![rfc7950](images/rfc7950.jpg)
+
 ## 抽象
 
 `YANG`是一种数据建模语言(`data modeling language`)，用于对配置数据(`model configuration data`)，状态数据(`state data`)，远程过程调用(`Remote Procedure Calls`)和网络管理协议通知(`notifications for network   management protocols`)进行建模。
