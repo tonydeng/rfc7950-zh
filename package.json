@@ -1,0 +1,24 @@
+{
+    "name": "rfc7950-zh",
+    "version": "1.0.0",
+    "homepage": "https://tonydeng.github.io/rfc7950-zh/",
+    "description": "RFC7950 (The YANG 1.1 Data Modeling Language) 中文翻译版本",
+     "dependencies":{
+         "gitbook-plugin-easyseo":"^1.1.0",
+         "html-entities":"^1.2.1"
+     },
+     "keywords": [
+          "rfc7950",
+          "YANG",
+          "YANG 1.1",
+          "NETCONF",
+          "SDN",
+          "rfc7950中文翻译",
+          "rfc7950 zh"
+        ],
+    "author": "Tony Deng <wolf.deng@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+      "url":  "https://github.com/tonydeng/rfc7950-zh/issues"
+    }
+}

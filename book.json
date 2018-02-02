@@ -1,8 +1,29 @@
 {
-    "plugins" : [ "anchors", "ga" ],
+    "title": "YANG 1.1 数据建模语言",
+    "description": "YANG 1.1 数据建模语言 - RFC7950 中文翻译",
+    "language": "zh",
+    "plugins" : [
+        "anchors",
+        "ga",
+        "github",
+        "splitter",
+        "github-buttons"
+    ],
     "pluginsConfig": {
         "ga": {
             "token": "UA-80673215-1"
+        },
+        "github-buttons": {
+            "repo": "tonydeng/rfc7950-zh",
+            "types": [
+                "star",
+                "watch",
+                "fork"
+            ],
+            "size": "small"
+        },
+        "github": {
+            "url": "https://github.com/tonydeng/rfc7950-zh"
         }
     }
 }
