@@ -54,9 +54,9 @@
 
 - 必选节点(`mandatory node`)：必选节点是以下之一：
 
-    - “`mandatory`”属性为“`true`”的`leaf`，`choice`，`anydata`或`anyxml`节点。
-    - “`min-elements`”属性大于零值的列表(`list`)或叶列表(`leaf-list`)节点。
-    - 没有“`presence`”语句的容器(`container`)节点，并且至少有一个子节点为必选节点。
+  - “`mandatory`”属性为“`true`”的`leaf`，`choice`，`anydata`或`anyxml`节点。
+  - “`min-elements`”属性大于零值的列表(`list`)或叶列表(`leaf-list`)节点。
+  - 没有“`presence`”语句的容器(`container`)节点，并且至少有一个子节点为必选节点。
 
 - 模块(`module`)：`YANG`模块用来定义层次化的节点。通过其定义和从其他地方导入或包含的定义，模块是自包含的和“可编译的”。
 
