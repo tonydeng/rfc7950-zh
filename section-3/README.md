@@ -62,9 +62,9 @@
 
 - 非刷单容器(`non-presence container`)：是否存在本身没有意义的container，仅用于包含子节点，如果没有子节点则其本身是否存在无意义。
 
-- 刷单容器(`presence container`)：是否存在本身就具有意义的container。
+- 刷单容器(`presence container`)：是否存在本身就具有意义的container。
 
-- `RPC`：远程过程调用。
+- `RPC`：远程过程调用。
 
 - RPC操作(`RPC operation`)：一次特定的远程过程调用。
 
