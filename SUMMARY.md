@@ -46,7 +46,7 @@
         - [6.3.1. 语言扩展](section-6/6.3.1.md)
     - [6.4. XPath评估](section-6/6.4.md)
         - [6.4.1. XPath上下文](section-6/6.4.1.md)
-    - [6.5. 模式节点标识符](section-6/6.5.md)
+    - [6.5. 模型节点标识符](section-6/6.5.md)
 - [7. YANG声明](section-7/README.md)
     - [7.1. “模块”声明](section-7/7.1.md)
     - [7.2. “子模块”声明](section-7/7.2.md)
